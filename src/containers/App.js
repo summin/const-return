@@ -16,7 +16,6 @@ export default class App extends Component {
                             <div className="div5">Div 4 Children</div>
                             <div className="div5">Div 4 Children</div>
                         </div>
-                        
                         <div className="div4">Div 3 Children</div>
                         <div className="div4">Div 3 Children</div>
                     </div>
