@@ -1,0 +1,35 @@
+$bg-cl: #3a596c;
+$bg-wh: white;
+$cl-ft: black;
+
+
+$f-h: "Helvetica Neue";
+$f-a: "Arial";
+$f-g: "Garamond";
+
+$f-sz: 15px; 
+
+$f-sz-hero-hx: 600px;
+$f-sz-hero-h1: 30px;
+$f-wg-hero-h1: 300px;
+$f-wg-hero-hx: 100px;
+
+body { 
+    font-family: $f-a; 
+    font-size: $f-sz; 
+    font-style: normal; 
+    font-variant: normal; 
+} 
+
+.hero {
+    font-weight: $f-wg-hero-hx;
+    font-size: $f-sz-hero-hx;
+}
+
+.hero-a {
+    font-family: $f-g; 
+}
+
+.hero-b {
+    font-family: $f-h; 
+}
