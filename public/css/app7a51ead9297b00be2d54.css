@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(to right, #3a596c, white);
+  font-family: "Arial";
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal; }
+
+.nav {
+  margin: 20px;
+  list-style-type: none;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 100;
+  font-variant: normal; }
+
+.nav li {
+  display: inline-block;
+  padding: 0px 40px; }
+
+.hero {
+  font-weight: 100px;
+  font-size: 600px; }
+
+.hero-a {
+  font-family: "Garamond"; }
+
+.hero-b {
+  font-family: "Helvetica Neue"; }

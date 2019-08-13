@@ -64,7 +64,8 @@ const config = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '../css/[hash].[ext]'
+                            path: path.resolve(__dirname, 'public'),
+                            name: '/media/[hash].[ext]'
                         }
                     }
                 ]

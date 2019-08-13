@@ -7,19 +7,84 @@ $f-h: "Helvetica Neue";
 $f-a: "Arial";
 $f-g: "Garamond";
 
+
+$h-sz-h: 50px;
+
 $f-sz: 15px; 
 
+$f-sz-head-nav: 25px;
 $f-sz-hero-hx: 600px;
 $f-sz-hero-h1: 30px;
 $f-wg-hero-h1: 300px;
 $f-wg-hero-hx: 100px;
 
+
+
 body { 
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, $bg-cl, $bg-wh);
     font-family: $f-a; 
     font-size: $f-sz; 
     font-style: normal; 
     font-variant: normal; 
 } 
+
+.nav {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: center;
+    font-family: $f-h; 
+    font-size: $f-sz-head-nav; 
+    font-style: normal; 
+    font-weight: 100;
+    font-variant:  normal; 
+}
+
+.nav ul {
+    margin: 0px;
+    padding: 0px; 
+}
+
+.nav li {
+    height: $h-sz-h;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 40px;
+    line-height: 2em;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.nav img {
+    height: $h-sz-h;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0px;
+    padding: 0px;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+
+.nav.dropdown li{
+    display: none;
+
+}
+
+.nav.account {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0px;
+    padding: 0px 10px;
+    line-height: 2em;
+    border-style: dotted;
+    border-width: 1px;
+}
 
 .hero {
     font-weight: $f-wg-hero-hx;
