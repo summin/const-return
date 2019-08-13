@@ -8,7 +8,7 @@ $f-a: "Arial";
 $f-g: "Garamond";
 
 
-$h-sz-h: 50px;
+$h-sz-h: 35px;
 
 $f-sz: 15px; 
 
@@ -51,8 +51,8 @@ body {
     height: $h-sz-h;
     display: inline-block;
     margin: 0px;
-    padding: 0px 40px;
-    line-height: 2em;
+    padding: 10px 40px;
+    line-height: 1.5em;
     border-style: dotted;
     border-width: 1px;
 }
@@ -64,7 +64,7 @@ body {
     right: 0;
     top: 0;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     border-style: dotted;
     border-width: 1px;
 }
