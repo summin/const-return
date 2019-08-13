@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, $bg-cl, $bg-wh);
+    font-family: $f-a; 
+    font-size: $f-sz; 
+    font-style: normal; 
+    font-variant: normal; 
+} 
+
+.content {
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.footer {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.text-center {
+    text-align: centre;
+}

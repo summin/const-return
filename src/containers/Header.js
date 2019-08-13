@@ -11,16 +11,16 @@ export default class Header extends Component {
 
         return (
             <div className="nav">
-                <img src={Logo} width="auto" />
+                <img src={Logo}/>
                 <ul>
                     <li>Technology</li>
                     <li>Projects</li>
                     <li>Motivation</li>
                     <li>About</li>
                 </ul>
-                <FontAwesomeIcon icon={faUserCircle}/>
+
                 <ul className="dropdown account nav">
-                    Account
+                    <FontAwesomeIcon icon={faUserCircle} />
                     <li>
 
                     </li>
