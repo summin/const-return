@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'GaramondProItalic';
+  src: url(/public/media/f5eac8bc34d796294b100ff72b085800.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.nav {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 100;
+  font-variant: normal; }
+
+.nav ul {
+  margin: 0px;
+  padding: 0px; }
+
+.nav li {
+  height: 55px;
+  text-align: center;
+  max-width: 110px;
+  min-width: 110px;
+  display: inline-block;
+  margin: 0px;
+  padding: 10px 30px 6px;
+  line-height: 50px;
+  border-style: dotted;
+  border-width: 1px; }
+
+.nav img {
+  height: 55px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0px;
+  padding: 8px 15px;
+  border-style: dotted;
+  border-width: 1px; }
+
+.nav.account {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 25px;
+  margin: 0px;
+  padding: 10px 10px;
+  line-height: 50px;
+  border-style: dotted;
+  border-width: 1px; }
+
+.nav.dropdown li {
+  display: none; }
+
+.hero {
+  border-style: dotted;
+  border-width: 1px; }
+
+.hero-a {
+  font-family: "GaramondProItalic";
+  font-size: 300px; }
+
+.hero-b {
+  font-weight: 100;
+  font-family: "Helvetica Neue";
+  font-size: 300px; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(to right, #3a596c, white);
+  font-family: "Arial";
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal; }
+
+.content {
+  border-style: dotted;
+  border-width: 1px; }
+
+.footer {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  border-style: dotted;
+  border-width: 1px; }
+
+.text-center {
+  text-align: centre; }

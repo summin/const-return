@@ -1,18 +1,18 @@
 import React, { Fragment, Component } from 'react';
 
-
 export default class ContentHero extends Component {
 
     render() {
 
         return (
             <div className="text-centre hero">
+                hero <br></br>
                 <div className="hero-a">
-                    Under
-            </div>
+                    Const
+                </div>
                 <div className="hero-b">
-                    construction
-            </div>
+                    return
+                </div>
             </div>
         );
     }

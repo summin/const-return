@@ -1,15 +1,123 @@
+
+$f-sz-hero-hx: 300%;
+$f-sz-hero-h1: 300px;
+$ln-h-hero-b: 0vh;
+$pd-l-hero-b: 0;
+$mg-l-hero-b: 0 0 10px 13vh;
+
+$f-wg-hero-h1: 300;
+$f-wg-hero-hx: 100;
+
 .hero {
-    border-style: dotted;
-    border-width: 1px;
+    position: relative;
+    height: 80vh;
+    margin: 0 auto 0 auto;
+    text-align: center;
+
+    padding: 10vh 0 10vh 0;
+        //dev-edit
+        border-style: dashed;
+        border-width: 2px;
+        //
 }
 
 .hero-a {
+    float: none;
+    padding: 0 0 0 0.3ex;
+    position: relative;
+    right: 1ex;
+    margin: 0 25% 0 25%;
+    text-align: center;
     font-family: $f-g; 
-    font-size: $f-wg-hero-h1
+    font-size: $f-sz-hero-hx;
+         //dev-edit
+         border-style: dashed;
+         border-width: 2px;
+         //
 }
 
 .hero-b {
+    display: block;
+    float: none;
+    position: relative;
+    top: -1.2ex;
+    left: 1ex;
+    padding: 0 0 0 0;
+    margin: 0 25vw 0 25vw;
+    text-align: center;
     font-weight: $f-wg-hero-hx;
     font-family: $f-h; 
-    font-size: $f-wg-hero-h1
+    font-size: $f-sz-hero-hx;
+         //dev-edit
+         border-style: dashed;
+         border-width: 2px;
+         //
+}
+
+////////////
+// w+h 1  //
+////////////
+
+@media only screen and (max-width: 600px) {
+    .hero-a {
+        font-size: $f-sz-hero-hx;
+    }
+    .hero-b {
+        font-size: $f-sz-hero-hx;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .hero-a {
+        font-size: $f-sz-hero-hx + 700%;
+    }
+    .hero-b {
+        font-size: $f-sz-hero-hx + 700%;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1600px){
+    .hero-a {
+        font-size: $f-sz-hero-hx + 1300%;
+    }
+    .hero-b {
+        font-size: $f-sz-hero-hx + 1300%;
+    }
+}
+
+@media only screen and (min-width: 1601px) {
+    .hero-a {
+        font-size: $f-sz-hero-hx + 1600%;
+    }
+    .hero-b {
+        font-size: $f-sz-hero-hx + 1600%;
+    }
+}
+
+////////////
+// HEIGHT //
+////////////
+
+@media only screen and (max-height: 300px) {
+    .hero {
+        padding: 1vh 0 0 0;
+    }
+}
+
+@media only screen and (min-height: 301px) and (max-height: 500px) {
+    .hero {
+        padding: 4vh 0 0 0;
+    }
+}
+
+@media only screen and (min-height: 501px) and (max-height: 800px) {
+    .hero {
+        padding: 10vh 0 0 0;
+    }
+}
+
+@media only screen and (min-height: 801px) {
+    .hero {
+        padding: 15vh 0 0 0;
+    }
 }
