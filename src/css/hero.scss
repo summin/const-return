@@ -54,6 +54,31 @@ $f-wg-hero-hx: 100;
          //
 }
 
+.heroWordA {
+     //dev-edit
+     border-style: dotted;
+     border-width: 1px;
+     position: relative;
+     left: 0px;
+     transition: left 2s, border-width 0.5s;
+     -webkit-transition: left 2s, border-width 0.5s;
+
+     //
+}
+
+.heroWordA:click  {
+    left: 10px;
+    height: 30px;
+    border-width: 5px;
+}
+
+.heroWordB {
+    //dev-edit
+    border-style: dashed;
+    border-width: 1px;
+    //
+}
+
 ////////////
 // w+h 1  //
 ////////////
