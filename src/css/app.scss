@@ -5,8 +5,6 @@
     font-style: normal;
   }
 
-
-
 $bg-cl: #3a596c;
 $bg-wh: white;
 $cl-ft: black;
@@ -31,5 +29,7 @@ $f-h1: 45px;
 @import './nav.scss';
 @import './hero.scss';
 @import './one-shots.scss';
+@import './animate.scss';
+
 
 

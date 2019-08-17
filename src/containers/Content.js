@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import ContentHero from './content/ContentHero'
+import ContentHero from './ContentHero'
 
 export default class Content extends Component {
 
