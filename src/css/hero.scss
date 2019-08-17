@@ -10,7 +10,7 @@ $f-wg-hero-hx: 100;
 .hero {
     position: relative;
     height: 80vh;
-    margin: 0 auto 0 auto;
+    margin: 0 ;
     text-align: center;
     padding: 10vh 0 10vh 0;
         //dev-edit
@@ -29,6 +29,7 @@ $f-wg-hero-hx: 100;
     position: relative;
     right: 1ex;
     margin: 0 25% 0 25%;
+    max-height: 3ex;
     text-align: center;
     font-family: $f-g; 
     font-size: $f-sz-hero-hx;
@@ -47,6 +48,7 @@ $f-wg-hero-hx: 100;
     top: -1.2ex;
     left: 1ex;
     padding: 0 0 0 0;
+    max-height: 3ex;
     margin: 0 25vw 0 25vw;
     text-align: center;
     font-weight: $f-wg-hero-hx;

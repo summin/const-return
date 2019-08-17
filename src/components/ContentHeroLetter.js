@@ -33,6 +33,7 @@ export default ({ ...props }) => {
 
     console.log('h' + props.counter + " " + side)
 
+    
 
     const animate = (animate) => {
         const elem = document.getElementsByClassName('h' + props.counter)[0]

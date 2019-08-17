@@ -15,6 +15,10 @@ export default class ContentHero extends Component {
         });
     }
 
+    onScroll = () => {
+        console.log("a")
+    }
+
     render() {
         const wordA = "Const"
         const wordB = "return"
@@ -29,7 +33,7 @@ export default class ContentHero extends Component {
 
             <div className="text-centre hero">
                 <br></br>
-                <div className="hero-a" onClick={this.onClick}>
+                <div className="hero-a" onClick={this.onClick} onScroll={this.onScroll}>
                     {wordSlice(wordA).map((i) => {
                         counter++;
                         return (
