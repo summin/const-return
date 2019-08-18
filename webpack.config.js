@@ -65,7 +65,7 @@ const config = {
                         loader: 'file-loader',
                         options: {
                             path: path.resolve(__dirname, 'public'),
-                            name: '/media/[hash].[ext]'
+                            name: 'media/[hash].[ext]'
                         }
                     }
                 ]
@@ -85,7 +85,7 @@ const config = {
             title: 'Caching',
             template: './src/index.html'
         }),
-        new ExtractTextPlugin(path.join('css', 'app[hash].css')),
+        new ExtractTextPlugin(path.join('app[hash].css')),
         new webpack.DefinePlugin({
             '__DEV__': JSON.stringify(true),
             '__API_HOST__': JSON.stringify('http://localhost/my-app/'),

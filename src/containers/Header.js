@@ -6,17 +6,21 @@ import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
 
 export default class Header extends Component {
 
+    onClick = () => {
+
+    }
+
     render() {
 
-
+        console.log("Header RENDERED")
         return (
             <div className="nav">
                 <img src={Logo}/>
                 <ul>
-                    <li>Technology</li>
-                    <li>Projects</li>
-                    <li>Motivation</li>
-                    <li>About</li>
+                <a href=""><li onClick={this.props.onClick}>Technology</li></a>
+                <a href=""><li onClick={this.props.onClick}>Projects</li></a>
+                <a href=""><li onClick={this.props.onClick}>Motivation</li></a>
+                <a href=""><li onClick={this.props.onClick}>About</li></a>
                 </ul>
 
                 <ul className="dropdown account nav">

@@ -3,13 +3,15 @@ import ContentHero from './ContentHero'
 
 export default class Content extends Component {
 
-    render() {
+    style = {
+        position: "absolute"
+    }
 
+    render() {
+        console.log("Content RENDERED")
         return (
             <div>
-            <ContentHero />
-              CONTENT
-              <div className="content"> Div 1</div>
+                <ContentHero />
             </div>
         );
     }

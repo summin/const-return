@@ -9,17 +9,18 @@ $f-wg-hero-hx: 100;
 
 .hero {
     position: relative;
-    height: 80vh;
+    height: 75vh;
     margin: 0 ;
     text-align: center;
-    padding: 10vh 0 10vh 0;
+    overflow: hidden;
+    padding: 10vh 0 0vh 0;
         //dev-edit
         border-style: dashed;
         border-width: 2px;
         //
     -webkit-transition:  padding-top 1s ease-in; /* Safari prior 6.1 */
     transition: padding-top 1s ease-in-out; 
-
+    
     
 }
 
@@ -36,8 +37,8 @@ $f-wg-hero-hx: 100;
     -webkit-transition:  font-size 0.6s ease-out; /* Safari prior 6.1 */
     transition: font-size 0.6s ease-out; 
          //dev-edit
-         border-style: dashed;
-         border-width: 2px;
+         //border-style: dashed;
+         //border-width: 2px;
          //
 }
 
@@ -57,27 +58,10 @@ $f-wg-hero-hx: 100;
     -webkit-transition:  font-size 0.6s ease-out; /* Safari prior 6.1 */
     transition: font-size 0.6s ease-out; 
          //dev-edit
-         border-style: dashed;
-         border-width: 2px;
+         //border-style: dashed;
+         //border-width: 2px;
          //
 }
-
-.heroLetterA {
-     //dev-edit
-     border-style: dotted;
-     border-width: 1px;
-     //
-     position: relative;
-}
-
-.heroLetterB {
-    //dev-edit
-    border-style: dashed;
-    border-width: 1px;
-    //
-    position: relative;
-}
-
 
 ////////////
 // HEIGHT //
