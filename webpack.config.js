@@ -59,7 +59,7 @@ const config = {
                 })
             },
             {
-                test: /.(png|woff(2)?|eot|ttf|svg|gif)(\?[a-z0-9=\.]+)?$/,
+                test: /.(png|woff(2)?|eot|ttf|otf|svg|gif)(\?[a-z0-9=\.]+)?$/,
                 use: [
                     {
                         loader: 'file-loader',

@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../media/fonts/HelveticaNeue-UltraLight.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 $bg-cl: #3a596c;
 $bg-wh: white;
