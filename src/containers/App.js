@@ -11,6 +11,7 @@ export default class App extends Component {
         contentB: "",
         contentACentreOpacity: "",
         contentBCentreOpacity: "",
+        contentCentreFXLast: "B",
         onClickValue: "",
         footer: "",
         heroAnimate: 0,
@@ -28,9 +29,12 @@ export default class App extends Component {
             heroAnimate: this.state.heroAnimate + 1,
             heroAnimated: true,
             onClickValue: e.target.innerHTML,
-            content: this.state[e.target.innerHTML.toLowerCase() + "Content"],
-            contentACentreOpacity: "opacity-1"
+            ["content" + (this.state.contentCentreFXLast == "A" ? "B" : "A")]: this.state[e.target.innerHTML.toLowerCase() + "Content"],
+            ["contentCentreOpacity" + (this.state.contentCentreFXLast == "A" ? "B" : "A")]: "opacity-1",
+            ["contentCentreOpacity" + (this.state.contentCentreFXLast == "A" ? "A" : "B")]: "opacity-0",
+            contentCentreFXLast: this.state.contentCentreFXLast == "A" ? "B" : "A",
         })
+        console.log(this.state.contentCentreFXLast)
     }
     }
 
@@ -44,8 +48,8 @@ export default class App extends Component {
                 <Content
                     contentA={this.state.contentA}
                     contentB={this.state.contentB}
-                    contentACentreOpacity = {this.state.contentCentreOpacityA}
-                    contentBCentreOpacity = {this.state.contentCentreOpacityB}
+                    contentCentreOpacityA = {this.state.contentCentreOpacityA}
+                    contentCentreOpacityB = {this.state.contentCentreOpacityB}
                     heroAnimate={this.state.heroAnimate}
                     heroAnimated={this.state.heroAnimated} />
                 <Footer

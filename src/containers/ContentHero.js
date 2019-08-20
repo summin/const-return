@@ -1,6 +1,12 @@
 import React, { Fragment, Component } from 'react';
 import ContentHeroLetter from '../components/ContentHeroLetter'
 
+// PROPS
+// letter
+// word
+// counter
+// animate
+// animated
 
 export default class ContentHero extends Component {
 
