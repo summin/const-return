@@ -18,15 +18,13 @@
 .nav li {
     height: $h-sz-h;
     text-align: center;
-    max-width: $h-wd-li;
-    min-width: $h-wd-li;
     display: inline-block;
     margin: 0px;
     padding: 10px 30px 6px;
     line-height: 50px;
     //dev-edit
-    border-style: dotted;
-    border-width: 1px;
+    //border-style: dotted;
+    //border-width: 1px;
     //
 }
 
@@ -39,8 +37,8 @@
     margin: 0px;
     padding: 8px 15px;
      //dev-edit
-    border-style: dotted;
-    border-width: 1px;
+    //border-style: dotted;
+    //border-width: 1px;
     //
 }
 
@@ -53,8 +51,8 @@
     padding: 10px 10px;
     line-height: 50px;
      //dev-edit
-    border-style: dotted;
-    border-width: 1px;
+    //border-style: dotted;
+    //border-width: 1px;
     //
 }
 
@@ -62,3 +60,5 @@
     display: none;
 
 }
+
+.nav a { color: inherit; } 

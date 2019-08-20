@@ -4,21 +4,6 @@ import ContentHeroLetter from '../components/ContentHeroLetter'
 
 export default class ContentHero extends Component {
 
-
-    state = {
-        animata: false,
-    }
-
-    onClick = () => {
-        this.setState({
-            animate: !this.state.animate
-        });
-    }
-
-    onScroll = () => {
-        console.log("a")
-    }
-
     render() {
         const wordA = "Const"
         const wordB = "return"
@@ -33,26 +18,30 @@ export default class ContentHero extends Component {
 
             <div className="text-centre hero">
                 <br></br>
-                <div className="hero-a" onClick={this.onClick} onScroll={this.onScroll}>
+                <div className="hero-a">
                     {wordSlice(wordA).map((i) => {
                         counter++;
                         return (
-                        <ContentHeroLetter
-                            letter={i}
-                            counter={counter}
-                            animate={this.state.animate}
-                            length={length} />)
+                            <ContentHeroLetter
+                                letter={i}
+                                counter={counter}
+                                word="a"
+                                animate={this.props.heroAnimate}
+                                animated={this.props.heroAnimated}
+/>)
                     })}
                 </div>
                 <div className="hero-b">
                     {wordSlice(wordB).map((i) => {
                         counter++;
                         return (
-                        <ContentHeroLetter
-                            letter={i}
-                            counter={counter}
-                            animate={this.state.animate}
-                            length={length} />)
+                            <ContentHeroLetter
+                                letter={i}
+                                word="b"
+                                counter={counter}
+                                animate={this.props.heroAnimate}
+                                animated={this.props.heroAnimated}
+                            />)
                     })}
                 </div>
             </div>

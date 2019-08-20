@@ -15,7 +15,7 @@ export default class Header extends Component {
         console.log("Header RENDERED")
         return (
             <div className="nav">
-                <img src={Logo}/>
+            <a href=""><img src={Logo}/></a>
                 <ul>
                 <a href=""><li onClick={this.props.onClick}>Technology</li></a>
                 <a href=""><li onClick={this.props.onClick}>Projects</li></a>

@@ -8,8 +8,11 @@ $f-wg-hero-h1: 300;
 $f-wg-hero-hx: 100;
 
 .hero {
-    position: relative;
-    height: 75vh;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    height: 85vh;
     margin: 0 ;
     text-align: center;
     overflow: hidden;
@@ -46,7 +49,7 @@ $f-wg-hero-hx: 100;
     display: block;
     float: none;
     position: relative;
-    top: -1.2ex;
+    top: -1.1ex;
     left: 1ex;
     padding: 0 0 0 0;
     max-height: 3ex;

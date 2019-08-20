@@ -1,8 +1,39 @@
 @font-face {
   font-family: 'GaramondProItalic';
-  src: url(../media/f5eac8bc34d796294b100ff72b085800.ttf) format("truetype");
+  src: url(media/f5eac8bc34d796294b100ff72b085800.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url(media/11cf35c0ccde5171ba1a91ca47e6225a.otf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(to right, #3a596c, white);
+  font-family: "Arial";
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  overflow: hidden; }
+
+.content {
+  border-style: dotted;
+  border-width: 1px; }
+
+.footer {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  border-style: dotted;
+  border-width: 1px; }
+
+.text-center {
+  text-align: centre; }
 
 .nav {
   margin: 0px;
@@ -27,9 +58,7 @@
   display: inline-block;
   margin: 0px;
   padding: 10px 30px 6px;
-  line-height: 50px;
-  border-style: dotted;
-  border-width: 1px; }
+  line-height: 50px; }
 
 .nav img {
   height: 55px;
@@ -38,9 +67,7 @@
   right: 0;
   top: 0;
   margin: 0px;
-  padding: 8px 15px;
-  border-style: dotted;
-  border-width: 1px; }
+  padding: 8px 15px; }
 
 .nav.account {
   position: absolute;
@@ -49,21 +76,21 @@
   font-size: 25px;
   margin: 0px;
   padding: 10px 10px;
-  line-height: 50px;
-  border-style: dotted;
-  border-width: 1px; }
+  line-height: 50px; }
 
 .nav.dropdown li {
   display: none; }
 
+.nav a {
+  color: inherit; }
+
 .hero {
   position: relative;
-  height: 80vh;
+  height: 85vh;
   margin: 0;
   text-align: center;
-  padding: 10vh 0 10vh 0;
-  border-style: dashed;
-  border-width: 2px;
+  overflow: hidden;
+  padding: 10vh 0 0vh 0;
   -webkit-transition: padding-top 1s ease-in;
   /* Safari prior 6.1 */
   transition: padding-top 1s ease-in-out; }
@@ -80,15 +107,13 @@
   font-size: 300%;
   -webkit-transition: font-size 0.6s ease-out;
   /* Safari prior 6.1 */
-  transition: font-size 0.6s ease-out;
-  border-style: dashed;
-  border-width: 2px; }
+  transition: font-size 0.6s ease-out; }
 
 .hero-b {
   display: block;
   float: none;
   position: relative;
-  top: -1.2ex;
+  top: -1.1ex;
   left: 1ex;
   padding: 0 0 0 0;
   max-height: 3ex;
@@ -99,19 +124,7 @@
   font-size: 300%;
   -webkit-transition: font-size 0.6s ease-out;
   /* Safari prior 6.1 */
-  transition: font-size 0.6s ease-out;
-  border-style: dashed;
-  border-width: 2px; }
-
-.heroLetterA {
-  border-style: dotted;
-  border-width: 1px;
-  position: relative; }
-
-.heroLetterB {
-  border-style: dashed;
-  border-width: 1px;
-  position: relative; }
+  transition: font-size 0.6s ease-out; }
 
 @media only screen and (max-height: 300px) {
   .hero {
@@ -153,30 +166,6 @@
   .hero-b {
     font-size: 1900%; } }
 
-body {
-  margin: 0px;
-  padding: 0px;
-  background: linear-gradient(to right, #3a596c, white);
-  font-family: "Arial";
-  font-size: 15px;
-  font-style: normal;
-  font-variant: normal; }
-
-.content {
-  border-style: dotted;
-  border-width: 1px; }
-
-.footer {
-  position: absolute;
-  display: inline-block;
-  bottom: 0;
-  width: 100%;
-  border-style: dotted;
-  border-width: 1px; }
-
-.text-center {
-  text-align: centre; }
-
 .animateITUp {
   -webkit-animation: topFrom0to200 3s;
   -webkit-animation-iteration-count: 2;
@@ -188,7 +177,7 @@ body {
     top: 0px;
     font-size: 300%; }
   to {
-    top: 400px;
+    top: 200px;
     font-size: 0ex; } }
 
 @keyframes FromHighToLow {
@@ -196,7 +185,7 @@ body {
     top: 0px;
     font-size: 3ex; }
   to {
-    top: -400px;
+    top: -200px;
     font-size: 0ex; } }
 
 .animateITDown {
@@ -210,7 +199,7 @@ body {
     top: 0px;
     font-size: 300%; }
   to {
-    top: 400px;
+    top: 200px;
     font-size: 0ex; } }
 
 @keyframes FromLowtoHigh {
