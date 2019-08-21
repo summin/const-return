@@ -16,16 +16,23 @@ body {
     margin: 0 25%;
         //dev-edit
     opacity: 0.0;
-    transition: opacity 1s
+    transition: opacity padding-top 2s;
+    transition:  1s;
+    overflow: hidden;
+    
     //
 }
 
 .opacity-0 {
     opacity: 0.0;
+    padding-top: 2vh;
+    z-index: -2
 }
 
 .opacity-1 {
     opacity: 1.0;
+    padding-top: 0vh;
+    z-index: 10
 }
 
 .contentParent {
