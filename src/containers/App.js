@@ -29,7 +29,6 @@ export default class App extends Component {
         })
     }
 
-
     onClick = (e) => {
         e.preventDefault()
         const target = e.target.innerHTML
@@ -52,10 +51,11 @@ export default class App extends Component {
     render() {
         return (
             <Fragment>
+
+                <Header
+                    header={this.state.header}
+                    onClick={this.onClick} />
                 <div className='main'>
-                    <Header
-                        header={this.state.header}
-                        onClick={this.onClick} />
                     <Content
                         contentA={this.state.contentA}
                         contentB={this.state.contentB}
@@ -63,9 +63,10 @@ export default class App extends Component {
                         contentCentreOpacityB={this.state.contentCentreOpacityB}
                         heroAnimate={this.state.heroAnimate}
                         heroAnimated={this.state.heroAnimated} />
+                        </div>
                     <Footer
                         footer={this.state.footer} />
-                </div>
+                
             </Fragment>
         );
     }

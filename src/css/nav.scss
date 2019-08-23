@@ -1,6 +1,7 @@
 .nav {
     margin: 0px;
     padding: 0px;
+    height: $h-sz-h;
     list-style-type: none;
     text-align: center;
     font-family: $f-h; 
@@ -8,25 +9,29 @@
     font-style: normal; 
     font-weight: 100;
     font-variant:  normal; 
+    border-style: dotted;
+    border-width: 1px;
 }
 
 .nav ul {
-    margin: 0px;
+    margin: 0;
     padding: 0px; 
 }
 
 .nav li {
-    height: $h-sz-h;
+    
     text-align: center;
     display: inline-block;
     margin: 0px;
-    padding: 10px 30px 6px;
     line-height: 50px;
+    text-decoration: none;
     //dev-edit
     //border-style: dotted;
     //border-width: 1px;
     //
 }
+
+ul:hover { cursor: pointer; }
 
 .nav img {
     height: $h-sz-h;
@@ -42,14 +47,16 @@
     //
 }
 
+
+
 .nav.account {
     position: absolute;
     right: 0;
     top: 0;
     font-size: $f-h3;
     margin: 0px;
-    padding: 10px 10px;
-    line-height: 50px;
+    padding: 00px 10px;
+    line-height: 73px;
      //dev-edit
     //border-style: dotted;
     //border-width: 1px;
@@ -62,3 +69,46 @@
 }
 
 .nav a { color: inherit; } 
+
+@media only screen and (min-width: 670px) {
+    .menu-toggler {
+        display: none;
+
+    }
+
+}
+
+@media only screen and (max-width: 669px) {
+    .nav ul  {
+        padding: 20px 0
+    }
+
+    .nav li {
+        position: relative;
+        top: 20px;
+        display: none;
+        border-style: dotted;
+        border-width: 1px;
+        z-index: 3;
+        background-color: $bg-cl;
+        }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav li {
+        padding: 10px 10px 6px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .nav li {
+        padding: 10px 10px 6px;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .nav li {
+        padding: 10px 30px 6px;
+    }
+}
