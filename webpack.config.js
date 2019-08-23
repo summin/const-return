@@ -2,8 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 const config = {
@@ -59,7 +59,7 @@ const config = {
                 })
             },
             {
-                test: /.(png|woff(2)?|eot|ttf|otf|svg|gif)(\?[a-z0-9=\.]+)?$/,
+                test: /.(png|jpg|woff(2)?|eot|ttf|otf|svg|gif)(\?[a-z0-9=\.]+)?$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -92,7 +92,6 @@ const config = {
         }),
 
     ],
-
 }
 
 if (process.env.NODE_ENV === 'production') {
@@ -114,5 +113,7 @@ if (process.env.NODE_ENV === 'production') {
         })
     );
 }
+
+
 
 module.exports = config;

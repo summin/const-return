@@ -1,0 +1,12 @@
+{
+    "name": "projects",
+    "type": "1-3",
+    "entries": {
+        "react": {
+            "name": "Projects",
+            "imgsrc": "",
+            "title": "PROJECTS",
+            "descr": "COMING SOON"
+        }
+    }
+}
