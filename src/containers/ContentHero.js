@@ -9,7 +9,7 @@ import ContentHeroLetter from '../components/ContentHeroLetter'
 // animated
 
 export default class ContentHero extends Component {
-
+    
     render() {
         const wordA = "Const"
         const wordB = "return"
@@ -19,7 +19,7 @@ export default class ContentHero extends Component {
             let chars = word.split("")
             return chars
         }
-
+        console.log("hero Rendered")
         return (
 
             <div className="text-centre hero">

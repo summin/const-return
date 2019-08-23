@@ -53,12 +53,12 @@ export default ({ ...props }) => {
                 }
                 if (dRand == 3) {
                     zoom = "in"
-                    elem.style[side1] = counter / 300 * Math.cos(a) + 'px'
-                    elem.style[side2] = counter / 300 * Math.sin(a) + 'px'
+                    elem.style[side1] = counter / 300 + 'px'
+                    elem.style[side2] = counter / 300 + 'px'
                 }
                 else {
-                    elem.style[side1] = counter * Math.cos(a) + 'px'
-                    elem.style[side2] = counter * Math.sin(a) + 'px'
+                    elem.style[side1] = counter + 'px'
+                    elem.style[side2] = counter  + 'px'
                 }
 
                 let x;
@@ -73,10 +73,12 @@ export default ({ ...props }) => {
         props.animate <= 1 && props.animated ? animate() : "";
         return () => {
             console.log("Letter cleanup Called")
+            const elem = document.getElementsByClassName('h ' + props.counter)[0]
         };
     })
-
+    console.log("hero letter Rendered")
     return (
+    
         <span
             className={'h ' + props.counter}
             style={style}
