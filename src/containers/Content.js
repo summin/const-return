@@ -11,7 +11,7 @@ export default ({ ...props }) => {
             Object.values(content.entries).map((i) =>
                 result.push(
                     <div className={i.style}>
-                        <img src={images[i.imgsrc]} />
+                        <div className="background-opaque"><img src={images[i.imgsrc]} /></div>
                         <h3>{i.name}</h3>
                         <p>{i.text}</p>
                     </div>))

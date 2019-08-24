@@ -16,7 +16,6 @@ $bg-wh: white;
 $bg-ft: #98c7a2;
 $cl-ft: black;
 
-
 $f-h: "Helvetica Neue";
 $f-a: "Arial";
 $f-g: "GaramondProItalic";
@@ -26,14 +25,15 @@ $h-sz-h: 70px;
 $h-wd-li: 110px;
 $f-sz-head-nav: 25px;
 
-
 //font standard
 $f-sz: 12px;
-$f-h3: 25px;
+$f-h3: 20px;
 $f-h2: 35px;
 $f-h1: 45px;
 
 @import './one-shots.scss';
+@import './content.scss';
+@import './content-wrappers/wrapped-image.scss';
 @import './nav.scss';
 @import './hero.scss';
 @import './animate.scss';

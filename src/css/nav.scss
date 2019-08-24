@@ -8,9 +8,8 @@
     font-size: $f-sz-head-nav; 
     font-style: normal; 
     font-weight: 100;
-    font-variant:  normal; 
-    border-style: dotted;
-    border-width: 1px;
+    font-variant:  normal;
+    z-index: 20;
 }
 
 .nav ul {
@@ -19,19 +18,32 @@
 }
 
 .nav li {
-    
     text-align: center;
     display: inline-block;
-    margin: 0px;
+    margin: 3px 0 13px;
     line-height: 50px;
     text-decoration: none;
-    //dev-edit
-    //border-style: dotted;
-    //border-width: 1px;
-    //
+    z-index: 20;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none;    /* Firefox all             */
+    -ms-user-select: none;     /* IE 10+                  */
+     user-select: none;  
 }
 
-ul:hover { cursor: pointer; }
+
+.menu-toggler {
+    padding-top: 15px;
+    font-size: 35px; 
+    transition: font-size 0.4s, padding-top 0.4s;
+}
+
+.menu-toggler:hover { 
+    cursor: pointer; 
+}
+
+.nav li:hover { 
+    cursor: pointer; 
+}
 
 .nav img {
     height: $h-sz-h;
@@ -41,13 +53,7 @@ ul:hover { cursor: pointer; }
     top: 0;
     margin: 0px;
     padding: 8px 15px;
-     //dev-edit
-    //border-style: dotted;
-    //border-width: 1px;
-    //
 }
-
-
 
 .nav.account {
     position: absolute;
@@ -57,15 +63,10 @@ ul:hover { cursor: pointer; }
     margin: 0px;
     padding: 00px 10px;
     line-height: 73px;
-     //dev-edit
-    //border-style: dotted;
-    //border-width: 1px;
-    //
 }
 
 .nav.dropdown li {
     display: none;
-
 }
 
 .nav a { color: inherit; } 
@@ -73,23 +74,19 @@ ul:hover { cursor: pointer; }
 @media only screen and (min-width: 670px) {
     .menu-toggler {
         display: none;
-
     }
-
 }
 
 @media only screen and (max-width: 669px) {
     .nav ul  {
-        padding: 20px 0
+        padding: 40px 0;
+        top: 30px;
+        margin: 0 25%;
     }
-
     .nav li {
         position: relative;
-        top: 20px;
         display: none;
-        border-style: dotted;
-        border-width: 1px;
-        z-index: 3;
+        z-index: 20;
         background-color: $bg-cl;
         }
 }
@@ -99,7 +96,6 @@ ul:hover { cursor: pointer; }
         padding: 10px 10px 6px;
     }
 }
-
 
 @media only screen and (max-width: 800px) {
     .nav li {

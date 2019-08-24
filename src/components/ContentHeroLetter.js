@@ -3,7 +3,8 @@ import React, { useEffect } from 'react';
 export default ({ ...props }) => {
 
     const style = {
-        position: "relative"
+        position: "relative",
+        zIndex: "10",
     }
 
     function getRandomInt(max) {
@@ -55,10 +56,12 @@ export default ({ ...props }) => {
                     zoom = "in"
                     elem.style[side1] = counter / 300 + 'px'
                     elem.style[side2] = counter / 300 + 'px'
+                    // elem.style.filter = 'blur(' + counter + 'px)'
                 }
                 else {
                     elem.style[side1] = counter + 'px'
-                    elem.style[side2] = counter  + 'px'
+                    elem.style[side2] = counter + 'px'
+                    // elem.style.filter = 'blur(' + counter + 'px)'
                 }
 
                 let x;
@@ -69,16 +72,15 @@ export default ({ ...props }) => {
                     elem.style.fontSize = -b / x + 100 + '%'
             }, (Math.random() + 1) * 10)
         }
-
         props.animate <= 1 && props.animated ? animate() : "";
         return () => {
-            console.log("Letter cleanup Called")
             const elem = document.getElementsByClassName('h ' + props.counter)[0]
+            elem.style.zIndex = -10
         };
     })
     console.log("hero letter Rendered")
     return (
-    
+
         <span
             className={'h ' + props.counter}
             style={style}

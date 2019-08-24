@@ -1,0 +1,23 @@
+.wrapped-image.grid-1-1 {
+    padding-top: 20px;
+    overflow: auto;
+    display: block;
+    // border-style: dotted;
+    // border-width: 2px;
+}
+
+.wrapped-image.grid-1-1 img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: rgba(14, 51, 74, 0.3);
+}
+
+.wrapped-image.grid-1-1 h3 {
+    margin-top: 0px;
+    //border-style: dashed;
+    //border-width: 1px;
+}

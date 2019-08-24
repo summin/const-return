@@ -7,24 +7,41 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default class Header extends Component {
 
-    onClick = () => {
+    state = {
+        toggle: this.props.toggle,
+    }
 
+    componentDidUpdate(prevProps, prevState) {
+        prevProps !== this.props ? this.setState({ toggle: this.props.toggle }) : ""
+    }
+
+    onClick = () => {
+        this.setState({ toggle: !this.state.toggle })
     }
 
     render() {
-
-        console.log("Header RENDERED")
         return (
             <div className="nav">
                 <a href=""><img src={Logo} /></a>
+                <div
+                    onClick={this.onClick}
+                    className="menu-toggler">
+                    <FontAwesomeIcon icon={faBars} />
+                </div>
                 <ul>
-                    <span className="menu-toggler"> <FontAwesomeIcon icon={faBars} /></span>
-                    <a href=""><li onClick={this.props.onClick}>Technology</li></a>
-                    <a href=""><li onClick={this.props.onClick}>Projects</li></a>
-                    <a href=""><li onClick={this.props.onClick}>Motivation</li></a>
-                    <a href=""><li onClick={this.props.onClick}>About</li></a>
+                    <li
+                        className={this.state.toggle ? "show" : ""}
+                        onClick={this.props.onClick}>Technology</li>
+                    <li
+                        className={this.state.toggle ? "show" : ""}
+                        onClick={this.props.onClick}>Projects</li>
+                    <li
+                        className={this.state.toggle ? "show" : ""}
+                        onClick={this.props.onClick}>Motivation</li>
+                    <li
+                        className={this.state.toggle ? "show" : ""}
+                        onClick={this.props.onClick}>About</li>
                 </ul>
-
                 <ul className="dropdown account nav">
                     <FontAwesomeIcon icon={faUserCircle} />
                     <li>

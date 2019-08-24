@@ -18,6 +18,7 @@ export default class App extends Component {
         footer: "",
         heroAnimate: 0,
         heroAnimated: false,
+        navToggle: false,
     }
 
     parser = (content) => {
@@ -38,6 +39,7 @@ export default class App extends Component {
                 this.setState({
                     heroAnimate: this.state.heroAnimate + 1,
                     heroAnimated: true,
+                    navToggle: false,
                     onClickValue: target,
                     ["content" + (this.state.contentCentreFXLast == "A" ? "B" : "A")]: i,
                     ["contentCentreOpacity" + (this.state.contentCentreFXLast == "A" ? "B" : "A")]: "opacity-1",
@@ -49,11 +51,13 @@ export default class App extends Component {
     }
 
     render() {
+        console.log("Toggle in App is " + this.state.navToggle)
         return (
             <Fragment>
 
                 <Header
                     header={this.state.header}
+                    toggle={this.state.navToggle}
                     onClick={this.onClick} />
                 <div className='main'>
                     <Content
