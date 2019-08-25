@@ -1,12 +1,34 @@
 {
     "name": "projects",
-    "type": "1-3",
+    "type": "iframe",
     "entries": {
-        "react": {
-            "name": "Projects",
-            "imgsrc": "",
-            "title": "PROJECTS",
-            "descr": "COMING SOON"
+        "const-return": {
+            "name": "Const Return",
+            "src": "https://constreturnbucket.s3.eu-west-2.amazonaws.com/pub/index.html",
+            "text": "Const Return CI Web Site. Built on <strong> React. All animations and transitions are custom tailored for experimental purposes.",
+            "style": "grid-1-1",
+            "type": "iframe"
+        },
+        "other1": {
+            "name": "Mini ini CMS",
+            "src": "",
+            "text": "Const Return CI Web Site. Built on React. All animations and transitions are custom tailored for experimental purposes.",
+            "style": "grid-1-1",
+            "type": "iframe"
+        },
+        "other2": {
+            "name": "Placeholder 2",
+            "src": "",
+            "text": "Const Return CI Web Site. Built on React. All animations and transitions are custom tailored for experimental purposes.",
+            "style": "grid-1-1",
+            "type": "iframe"
+        },
+        "other3": {
+            "name": "Placeholder 3",
+            "src": "",
+            "text": "Const Return CI Web Site. Built on React. All animations and transitions are custom tailored for experimental purposes.",
+            "style": "grid-1-1",
+            "type": "iframe"
         }
     }
 }

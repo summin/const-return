@@ -50,7 +50,24 @@ export default class App extends Component {
         })
     }
 
+    //componentDidMount() {
+    //    var c = document.createElement('canvas'),
+    //        ctx = c.getContext('2d'),
+    //        cw = c.width = 200,
+    //        ch = c.height = 200;
+//
+    //    for (var x = 0; x < cw; x++) {
+    //        for (var y = 0; y < ch; y++) {
+    //            ctx.fillStyle = 'hsl(0, 0%, ' + (100 - (Math.random() * 15)) + '%)';
+    //            ctx.fillRect(x, y, 1, 1);
+    //        }
+    //    }
+//
+    //    document.body.style.background = 'url(' + c.toDataURL() + ')';
+    //}
+
     render() {
+
         console.log("Toggle in App is " + this.state.navToggle)
         return (
             <Fragment>
@@ -67,10 +84,10 @@ export default class App extends Component {
                         contentCentreOpacityB={this.state.contentCentreOpacityB}
                         heroAnimate={this.state.heroAnimate}
                         heroAnimated={this.state.heroAnimated} />
-                        </div>
-                    <Footer
-                        footer={this.state.footer} />
-                
+                </div>
+                <Footer
+                    footer={this.state.footer} />
+
             </Fragment>
         );
     }

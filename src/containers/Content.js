@@ -10,10 +10,11 @@ export default ({ ...props }) => {
         if (content) {
             Object.values(content.entries).map((i) =>
                 result.push(
-                    <div className={i.style}>
+                    <div className={i.type + " " + i.style}>
                         <div className="background-opaque"><img src={images[i.imgsrc]} /></div>
                         <h3>{i.name}</h3>
                         <p>{i.text}</p>
+                        {i.type==="iframe" ? <iframe src={i.src} /> : null}
                     </div>))
             return result
         }

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{18:function(e){e.exports=JSON.parse('{"name":"motivation","type":"1-1","entries":{"react":{"name":"Motivation","imgsrc":"","title":"MOTIVATION","descr":"COMING SOON"}}}')}}]);
