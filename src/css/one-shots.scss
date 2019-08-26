@@ -70,7 +70,22 @@ h3 {
     float: left;
     height: 540px;
     overflow: hidden;
+    
 }
+
+.view-mobile p {
+    float: none!important; 
+    display: block!important;
+    width: inherit!important;
+    padding: 2%;
+}
+
+.view-mobile h3 {
+    float: none!important; 
+    display: block!important;
+    width: inherit!important
+}
+
 
 .view-mobile:nth-child(odd) {
     float:right;
