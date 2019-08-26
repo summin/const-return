@@ -3,7 +3,6 @@ import Header from './Header'
 import Content from './Content'
 import Footer from './Footer'
 
-
 export default class App extends Component {
 
     state = {
@@ -14,6 +13,7 @@ export default class App extends Component {
         contentCentreOpacityA: "",
         contentCentreOpacityB: "",
         contentCentreFXLast: "B",
+        contentDeviceView: "view-desktop",
         onClickValue: "",
         footer: "",
         heroAnimate: 0,
@@ -30,48 +30,43 @@ export default class App extends Component {
         })
     }
 
+    onClickContent = (e) => {
+        (e.target.attributes.value.value == "desktop") ?
+            this.setState({
+                contentDeviceView: "view-desktop",
+                heroAnimate: this.state.heroAnimate + 1,
+                heroAnimated: true
+            }) :
+            this.setState({
+                contentDeviceView: "view-mobile",
+                heroAnimate: this.state.heroAnimate + 1,
+                heroAnimated: true
+            });
+    }
+
     onClick = (e) => {
         e.preventDefault()
-        const target = e.target.innerHTML
-        this.parser(target.toLowerCase()).then((i) => {
-            if (target !== this.state.onClickValue) {
-                console.log("CalledinnerOnclick")
+        const html = e.target.innerHTML
+        this.parser(html.toLowerCase()).then((i) => {
+            if (html !== this.state.onClickValue) {
                 this.setState({
                     heroAnimate: this.state.heroAnimate + 1,
                     heroAnimated: true,
                     navToggle: false,
-                    onClickValue: target,
+                    contentDeviceView: "view-desktop",
+                    onClickValue: html,
                     ["content" + (this.state.contentCentreFXLast == "A" ? "B" : "A")]: i,
-                    ["contentCentreOpacity" + (this.state.contentCentreFXLast == "A" ? "B" : "A")]: "opacity-1",
-                    ["contentCentreOpacity" + (this.state.contentCentreFXLast == "A" ? "A" : "B")]: "opacity-0",
+                    ["contentCentreOpacity" + (this.state.contentCentreFXLast === "A" ? "B" : "A")]: "opacity-1",
+                    ["contentCentreOpacity" + (this.state.contentCentreFXLast === "A" ? "A" : "B")]: "opacity-0 max-height-100-vh of-h",
                     contentCentreFXLast: this.state.contentCentreFXLast == "A" ? "B" : "A"
                 })
             }
         })
     }
 
-    //componentDidMount() {
-    //    var c = document.createElement('canvas'),
-    //        ctx = c.getContext('2d'),
-    //        cw = c.width = 200,
-    //        ch = c.height = 200;
-//
-    //    for (var x = 0; x < cw; x++) {
-    //        for (var y = 0; y < ch; y++) {
-    //            ctx.fillStyle = 'hsl(0, 0%, ' + (100 - (Math.random() * 15)) + '%)';
-    //            ctx.fillRect(x, y, 1, 1);
-    //        }
-    //    }
-//
-    //    document.body.style.background = 'url(' + c.toDataURL() + ')';
-    //}
-
     render() {
-
-        console.log("Toggle in App is " + this.state.navToggle)
         return (
             <Fragment>
-
                 <Header
                     header={this.state.header}
                     toggle={this.state.navToggle}
@@ -83,12 +78,13 @@ export default class App extends Component {
                         contentCentreOpacityA={this.state.contentCentreOpacityA}
                         contentCentreOpacityB={this.state.contentCentreOpacityB}
                         heroAnimate={this.state.heroAnimate}
-                        heroAnimated={this.state.heroAnimated} />
+                        heroAnimated={this.state.heroAnimated}
+                        onClick={this.onClickContent}
+                        contentDeviceView={this.state.contentDeviceView} />
                 </div>
                 <Footer
                     footer={this.state.footer} />
-
-            </Fragment>
+            </Fragment >
         );
     }
 }
