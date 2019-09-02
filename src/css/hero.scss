@@ -1,13 +1,13 @@
-$f-sz-hero-hx: 300%;
-$f-sz-hero-h1: 300px;
-$ln-h-hero-b: 0vh;
-$pd-l-hero-b: 0;
-$mg-l-hero-b: 0 0 10px 13vh;
+$f-sz-hero-animated-hx: 300%;
+$f-sz-hero-animated-h1: 300px;
+$ln-h-hero-animated-b: 0vh;
+$pd-l-hero-animated-b: 0;
+$mg-l-hero-animated-b: 0 0 10px 13vh;
 
-$f-wg-hero-h1: 300;
-$f-wg-hero-hx: 100;
+$f-wg-hero-animated-h1: 300;
+$f-wg-hero-animated-hx: 100;
 
-.hero {
+.hero-animated {
     position: absolute;
     top:0;
     right: 0;
@@ -25,7 +25,7 @@ $f-wg-hero-hx: 100;
     user-select: none;
 }
 
-.hero-a {
+.hero-animated-a {
     float: none;
     padding: 0 0 0 0.3ex;
     position: relative;
@@ -34,12 +34,12 @@ $f-wg-hero-hx: 100;
     max-height: 3ex;
     text-align: center;
     font-family: $f-g; 
-    font-size: $f-sz-hero-hx;
+    font-size: $f-sz-hero-animated-hx;
     -webkit-transition:  font-size 0.6s ease-out; /* Safari prior 6.1 */
     transition: font-size 0.6s ease-out; 
 }
 
-.hero-b {
+.hero-animated-b {
     display: block;
     float: none;
     position: relative;
@@ -49,9 +49,9 @@ $f-wg-hero-hx: 100;
     max-height: 3ex;
     margin: 0 25vw 0 25vw;
     text-align: center;
-    font-weight: $f-wg-hero-hx;
+    font-weight: $f-wg-hero-animated-hx;
     font-family: $f-h; 
-    font-size: $f-sz-hero-hx;
+    font-size: $f-sz-hero-animated-hx;
     -webkit-transition:  font-size 0.6s ease-out; /* Safari prior 6.1 */
     transition: font-size 0.6s ease-out; 
 }
@@ -61,25 +61,25 @@ $f-wg-hero-hx: 100;
 ////////////
 
 @media only screen and (max-height: 300px) {
-    .hero {
+    .hero-animated {
         padding-top: 1vh;
     }
 }
 
 @media only screen and (min-height: 301px) and (max-height: 500px) {
-    .hero {
+    .hero-animated {
         padding-top: 4vh;
     }
 }
 
 @media only screen and (min-height: 501px) and (max-height: 800px) {
-    .hero {
+    .hero-animated {
         padding-top: 10vh;
     }
 }
 
 @media only screen and (min-height: 801px) {
-    .hero {
+    .hero-animated {
         padding-top: 15vh;
     }
 }
@@ -90,38 +90,38 @@ $f-wg-hero-hx: 100;
 ////////////
 
 @media only screen and (max-width: 600px) {
-    .hero-a {
-        font-size: $f-sz-hero-hx;
+    .hero-animated-a {
+        font-size: $f-sz-hero-animated-hx;
     }
-    .hero-b {
-        font-size: $f-sz-hero-hx;
+    .hero-animated-b {
+        font-size: $f-sz-hero-animated-hx;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
-    .hero-a {
-        font-size: $f-sz-hero-hx + 700%;
+    .hero-animated-a {
+        font-size: $f-sz-hero-animated-hx + 700%;
     }
-    .hero-b {
-        font-size: $f-sz-hero-hx + 700%;
+    .hero-animated-b {
+        font-size: $f-sz-hero-animated-hx + 700%;
     }
 }
 
 @media only screen and (min-width: 1001px) and (max-width: 1600px) {
-    .hero-a {
-        font-size: $f-sz-hero-hx + 1300%;
+    .hero-animated-a {
+        font-size: $f-sz-hero-animated-hx + 1300%;
     }
-    .hero-b {
-        font-size: $f-sz-hero-hx + 1300%;
+    .hero-animated-b {
+        font-size: $f-sz-hero-animated-hx + 1300%;
     }
 }
 
 @media only screen and (min-width: 1601px) {
-    .hero-a {
-        font-size: $f-sz-hero-hx + 2000%;
+    .hero-animated-a {
+        font-size: $f-sz-hero-animated-hx + 2000%;
     }
-    .hero-b {
-        font-size: $f-sz-hero-hx + 2000%;
+    .hero-animated-b {
+        font-size: $f-sz-hero-animated-hx + 2000%;
     }
 }
 

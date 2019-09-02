@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import ContentHeroLetter from '../components/ContentHeroLetter'
+import ContentHeroLetter from './ContentHeroLetter'
 
 // PROPS
 // letter
@@ -9,7 +9,7 @@ import ContentHeroLetter from '../components/ContentHeroLetter'
 // animated
 
 export default class ContentHero extends Component {
-    
+
     render() {
         const wordA = "Const"
         const wordB = "return"
@@ -19,12 +19,11 @@ export default class ContentHero extends Component {
             let chars = word.split("")
             return chars
         }
-        console.log("hero Rendered")
         return (
 
-            <div className="text-centre hero">
+            <div className="text-centre hero-animated">
                 <br></br>
-                <div className="hero-a">
+                <div className="hero-animated-a">
                     {wordSlice(wordA).map((i) => {
                         counter++;
                         return (
@@ -34,10 +33,10 @@ export default class ContentHero extends Component {
                                 word="a"
                                 animate={this.props.heroAnimate}
                                 animated={this.props.heroAnimated}
-/>)
+                            />)
                     })}
                 </div>
-                <div className="hero-b">
+                <div className="hero-animated-b">
                     {wordSlice(wordB).map((i) => {
                         counter++;
                         return (

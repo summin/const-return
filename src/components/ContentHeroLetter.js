@@ -78,7 +78,6 @@ export default ({ ...props }) => {
             elem.style.zIndex = -10
         };
     })
-    console.log("hero letter Rendered")
     return (
 
         <span

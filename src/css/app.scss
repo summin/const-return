@@ -26,12 +26,13 @@ $h-wd-li: 110px;
 $f-sz-head-nav: 25px;
 
 //font standard
-$f-sz: 12px;
+$f-sz: 15px;
 $f-h3: 20px;
 $f-h2: 35px;
 $f-h1: 45px;
 
 @import './one-shots.scss';
+@import './grid.scss';
 @import './content.scss';
 @import './content-wrappers/wrapped-image.scss';
 @import './content-wrappers/iframe.scss';

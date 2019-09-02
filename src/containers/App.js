@@ -30,20 +30,6 @@ export default class App extends Component {
         })
     }
 
-    onClickContent = (e) => {
-        (e.target.attributes.value.value == "desktop") ?
-            this.setState({
-                contentDeviceView: "view-desktop",
-                heroAnimate: this.state.heroAnimate + 1,
-                heroAnimated: true
-            }) :
-            this.setState({
-                contentDeviceView: "view-mobile",
-                heroAnimate: this.state.heroAnimate + 1,
-                heroAnimated: true
-            });
-    }
-
     onClick = (e) => {
         e.preventDefault()
         const html = e.target.innerHTML
@@ -71,20 +57,17 @@ export default class App extends Component {
                     header={this.state.header}
                     toggle={this.state.navToggle}
                     onClick={this.onClick} />
-                <div className='main'>
-                    <Content
-                        contentA={this.state.contentA}
-                        contentB={this.state.contentB}
-                        contentCentreOpacityA={this.state.contentCentreOpacityA}
-                        contentCentreOpacityB={this.state.contentCentreOpacityB}
-                        heroAnimate={this.state.heroAnimate}
-                        heroAnimated={this.state.heroAnimated}
-                        onClick={this.onClickContent}
-                        contentDeviceView={this.state.contentDeviceView} />
-                </div>
+                <Content
+                    contentA={this.state.contentA}
+                    contentB={this.state.contentB}
+                    contentCentreOpacityA={this.state.contentCentreOpacityA}
+                    contentCentreOpacityB={this.state.contentCentreOpacityB}
+                    heroAnimate={this.state.heroAnimate}
+                    heroAnimated={this.state.heroAnimated} />
+
                 <Footer
                     footer={this.state.footer} />
-            </Fragment >
+            </Fragment>
         );
     }
 }

@@ -9,7 +9,7 @@ $randomNumber: random(5);
     
 @-webkit-keyframes FromHighToLow {
     from {top:  $randomNumber * 0px;
-            font-size: $f-sz-hero-hx;}
+            font-size: $f-sz-hero-animated-hx;}
     to {top: $randomNumber * 200px;
         font-size: 0ex}
     }
@@ -34,7 +34,7 @@ $randomNumber: random(5);
     
 @-webkit-keyframes FromLowtoHigh {
     from {top:  $randomNumber * 0px;
-            font-size: $f-sz-hero-hx;}
+            font-size: $f-sz-hero-animated-hx;}
     to {top: $randomNumber * 200px;
         font-size: 0ex}
     }
