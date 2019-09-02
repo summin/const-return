@@ -18,11 +18,11 @@ export default class Content extends Component {
                     />
                 </div>
                 <div
-                    className={this.props.contentCentreOpacityA}>
+                    className={this.props.contentCentreOpacityA  + " " + "content-fadable"}>
                     <ContentZoneParser {...this.props.contentA} />
                 </div>
                 <div
-                    className={this.props.contentCentreOpacityB}>
+                    className={this.props.contentCentreOpacityB  + " " + "content-fadable"}>
                     <ContentZoneParser {...this.props.contentB} />
                 </div>
             </div>

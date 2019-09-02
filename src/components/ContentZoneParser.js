@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect } from 'react';
-import * as images from '../media/images/technology/index.js'
 import ContentElement from './ContentElement'
 import PropTypes from 'prop-types'
 import cuid from 'cuid'

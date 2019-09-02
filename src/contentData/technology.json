@@ -15,9 +15,7 @@
                     "text": "Our tech stack"
                 },
                 "style": {
-                    "type": "full",
-                    "width": "100%",
-                    "height": "inherit"
+                    "type": "centre-100"
                 },
                 "theme": "hero"
             }
@@ -26,9 +24,7 @@
     "zone-1": {
         "type": "zone",
         "style": {
-            "type": "centre-50",
-            "width": "50%",
-            "height": "inherit"
+            "type": "centre-50"
         },
         "layout": "flex",
         "entries": {
@@ -40,9 +36,7 @@
                     "text": "React makes it painless to create interactive UIs. Design simple views for each state in your application. We use React for nearly all new developments of UIs. React enables the app to be modular and complex with little expenses."
                 },
                 "style": {
-                    "type": "fixed",
-                    "width": "300px",
-                    "height": "500px"
+                    "placeholder": "placeholder"
                 },
                 "theme": "wrapped-image"
             },
@@ -54,9 +48,7 @@
                     "text": "Redux is an open-source JavaScript library for managing application state. It is most commonly used with libraries such as React or Angular for building user interfaces. We use redux in complex apps, where a lot of data complexity and routing is involved. Next to every corporate scale app requires it."
                 },
                 "style": {
-                    "type": "fixed",
-                    "width": "300px",
-                    "height": "500px"
+                    "placeholder": "placeholder"
                 },
                 "theme": "wrapped-image"
             },
@@ -68,9 +60,7 @@
                     "text": "As an asynchronous event driven JavaScript runtime, Node.js is designed to build scalable network applications. We use node on its own or in combination with PHP or Java, depending on the development requirements."
                 },
                 "style": {
-                    "type": "fixed",
-                    "width": "300px",
-                    "height": "500px"
+                    "placeholder": "placeholder"
                 },
                 "theme": "wrapped-image"
             },
@@ -82,9 +72,7 @@
                     "text": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions."
                 },
                 "style": {
-                    "type": "fixed",
-                    "width": "300px",
-                    "height": "500px"
+                    "placeholder": "placeholder"
                 },
                 "theme": "wrapped-image"
             },
@@ -96,9 +84,7 @@
                     "text": "Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible. We have experience in development of software, using Java. We will gladly incorporate Java into new developments or maintain the existing developments."
                 },
                 "style": {
-                    "type": "fixed",
-                    "width": "300px",
-                    "height": "500px"
+                    "placeholder": "placeholder"
                 },
                 "theme": "wrapped-image"
             },
@@ -110,9 +96,7 @@
                     "text": "PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. We may use PHP in some developments, depending on the requirements of the client."
                 },
                 "style": {
-                    "type": "fixed",
-                    "width": "300px",
-                    "height": "500px"
+                    "placeholder": "placeholder"
                 },
                 "theme": "wrapped-image"
             },
@@ -124,9 +108,7 @@
                     "text": "Sass (Syntactically Awesome Style Sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you to create style sheets faster. Sass is compatible with all versions of CSS. We use it in all of our developments to ensure efficiency."
                 },
                 "style": {
-                    "type": "fixed",
-                    "width": "300px",
-                    "height": "500px"
+                    "placeholder": "placeholder"
                 },
                 "theme": "wrapped-image"
             },
@@ -138,9 +120,7 @@
                     "text": "Three.js is a cross-browser JavaScript library and Application Programming Interface used to create and display animated 3D computer graphics in a web browser. Three.js uses WebGL. We have helped our customers to implement threee in their projects."
                 },
                 "style": {
-                    "type": "fixed",
-                    "width": "300px",
-                    "height": "500px"
+                    "placeholder": "placeholder"
                 },
                 "theme": "wrapped-image",
                 "entries": {
@@ -156,9 +136,7 @@
                     "text": "Millions of users globally rely on Atlassian products every day for improving software development, project management, collaboration, and code quality. We have an expertise in application development for Atlassian products using Groovy(Scriptrunner) and raw JAVA and Atlassian API."
                 },
                 "style": {
-                    "type": "fixed",
-                    "width": "300px",
-                    "height": "500px"
+                    "placeholder": "placeholder"
                 },
                 "theme": "wrapped-image"
             }

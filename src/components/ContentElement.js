@@ -19,7 +19,7 @@ export default ({ ...props }) => {
                 </div>
             )}
             {(props.type == "zone") && (
-                <div className={"zone " + props.layout}>
+                <div className={"zone " + props.layout + " " + props.style.type}>
                     {props.children}
                 </div>)}
         </Fragment>
