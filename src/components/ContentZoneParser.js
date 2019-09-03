@@ -29,8 +29,9 @@ export default ({ ...props }) => {
                         key={cuid()}
                         type={zone.type}
                         style={zone.style}
-                        layout={zone.layout}>
-                        {zone.entries && entriesParser(zone.entries)}
+                        layout={zone.layout}
+                        theme={zone.theme}>
+                        {entriesParser(zone.entries)}
                     </ContentElement>);
             }
             else console.warn("API Error - Zones")

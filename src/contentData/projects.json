@@ -1,34 +1,81 @@
 {
-    "name": "projects",
-    "type": "iframe",
-    "entries": {
-        "const-return": {
-            "name": "Const Return",
-            "src": "https://constreturnbucket.s3.eu-west-2.amazonaws.com/pub/index.html",
-            "text": "Const Return CI Web Site. Built on <strong> React. All animations and transitions are custom tailored for experimental purposes.",
-            "style": "grid-1-1",
-            "type": "iframe"
+    "zone-0": {
+        "type": "zone",
+        "style": {
+            "type": "centre-100",
+            "width": "100%",
+            "height": "inherit"
         },
-        "other1": {
-            "name": "Mini ini CMS",
-            "src": "",
-            "text": "Const Return CI Web Site. Built on React. All animations and transitions are custom tailored for experimental purposes.",
-            "style": "grid-1-1",
-            "type": "iframe"
+        "layout": "flex",
+        "entries": {
+            "technology": {
+                "content": {
+                    "name": "projects",
+                    "src": "",
+                    "text": "some of the systems that we've developed recently:"
+                },
+                "style": {
+                    "type": "centre-100"
+                },
+                "theme": "hero"
+            }
+        }
+    },
+    "zone-1": {
+        "type": "zone",
+        "style": {
+            "type": "centre-50"
         },
-        "other2": {
-            "name": "Placeholder 2",
-            "src": "",
-            "text": "Const Return CI Web Site. Built on React. All animations and transitions are custom tailored for experimental purposes.",
-            "style": "grid-1-1",
-            "type": "iframe"
-        },
-        "other3": {
-            "name": "Placeholder 3",
-            "src": "",
-            "text": "Const Return CI Web Site. Built on React. All animations and transitions are custom tailored for experimental purposes.",
-            "style": "grid-1-1",
-            "type": "iframe"
+        "layout": "flex",
+        "entries": {
+            "const-return": {
+                "content": {
+                    "name": "Const Return",
+                    "text": "Const Return CI Web Site. Built on <strong> React. All animations and transitions are custom tailored for experimental purposes.",
+                    "src": "https://constreturnbucket.s3.eu-west-2.amazonaws.com/pub/index.html"
+                    
+                },
+                "style": {
+                    "placeholder": "placeholder"
+                },
+                "theme": "iframe"
+            },
+            "Mini ini CMS": {
+                "content": {
+                    "name": "Mini ini CMS",
+                    "text": "Const Return CI Web Site. Built on React. All animations and transitions are custom tailored for experimental purposes.",
+                    "src": ""
+                    
+                },
+                "style": {
+                    "placeholder": "placeholder"
+                },
+                "theme": "iframe"
+            },
+            "placeholder1": {
+                "content": {
+                    "name": "Const Return",
+                    "text": "Const Return CI Web Site. Built on <strong> React. All animations and transitions are custom tailored for experimental purposes.",
+                    "src": "https://constreturnbucket.s3.eu-west-2.amazonaws.com/pub/index.html"
+                    
+                },
+                "style": {
+                    "placeholder": "placeholder"
+                },
+                "theme": "iframe"
+            },
+            "placeholder2": {
+                "content": {
+                    "name": "Const Return",
+                    "text": "Const Return CI Web Site. Built on <strong> React. All animations and transitions are custom tailored for experimental purposes.",
+                    "src": "https://constreturnbucket.s3.eu-west-2.amazonaws.com/pub/index.html"
+                    
+                },
+                "style": {
+                    "placeholder": "placeholder"
+                },
+                "theme": "iframe"
+            }
         }
     }
 }

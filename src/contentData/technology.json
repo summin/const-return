@@ -2,7 +2,7 @@
     "zone-0": {
         "type": "zone",
         "style": {
-            "type": "full",
+            "type": "centre-100",
             "width": "100%",
             "height": "inherit"
         },
@@ -10,9 +10,9 @@
         "entries": {
             "technology": {
                 "content": {
-                    "name": "Technology",
+                    "name": "technology",
                     "src": "image_React",
-                    "text": "Our tech stack"
+                    "text": "our tech stack:"
                 },
                 "style": {
                     "type": "centre-100"
