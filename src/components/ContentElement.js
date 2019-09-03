@@ -4,12 +4,13 @@ import PropTypes from 'prop-types'
 
 export default ({ ...props }) => {
 
-    useEffect(() => {
-        effect
-//        return () => {
-//            cleanup
-//        };
-    }, [input])
+    const iframe_render = () => {
+        console.log("asdasdasd")
+        setTimeout(() => {
+
+            return <iframe src={props.content.src}></iframe>
+        }, 2000);
+    }
 
     return (
         <Fragment>
@@ -20,7 +21,7 @@ export default ({ ...props }) => {
                             props.theme == 'wrapped-image' && 
                             i == 'src' && <img src={images[props.content.src]}></img>,
                             props.theme == 'iframe' && 
-                            i == 'src' && <iframe src={props.content.src}></iframe>,
+                            i == 'src' && <div>{iframe_render()}</div>,
                             i == 'name' && <h3>{props.content.name}</h3>,
                             i == 'text' && <p>{props.content.text}</p>
                         ]
