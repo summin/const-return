@@ -9,7 +9,7 @@
     font-style: normal; 
     font-weight: 100;
     font-variant:  normal;
-    z-index: 20;
+    z-index: 1;
 }
 
 .nav ul {
@@ -23,13 +23,18 @@
     margin: 3px 0 13px;
     line-height: 50px;
     text-decoration: none;
-    z-index: 20;
+    z-index: 1;
     -webkit-user-select: none; /* Chrome all / Safari all */
     -moz-user-select: none;    /* Firefox all             */
     -ms-user-select: none;     /* IE 10+                  */
-     user-select: none;  
+     user-select: none;
+     transition: transform 0.3s;
+    border-radius: 10px;
 }
 
+.nav li:hover {
+    transform: scale(1.2)
+}
 
 .menu-toggler {
     padding-top: 15px;
@@ -70,6 +75,10 @@
 }
 
 .nav a { color: inherit; } 
+
+.nav li.selected {
+    color: $f-sel !important;
+}
 
 @media only screen and (min-width: 670px) {
     .menu-toggler {

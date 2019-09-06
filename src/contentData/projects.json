@@ -51,30 +51,6 @@
                     "placeholder": "placeholder"
                 },
                 "theme": "iframe"
-            },
-            "placeholder1": {
-                "content": {
-                    "name": "Const Return",
-                    "text": "Const Return CI Web Site. Built on <strong> React. All animations and transitions are custom tailored for experimental purposes.",
-                    "src": "https://constreturnbucket.s3.eu-west-2.amazonaws.com/pub/index.html"
-                    
-                },
-                "style": {
-                    "placeholder": "placeholder"
-                },
-                "theme": "iframe"
-            },
-            "placeholder2": {
-                "content": {
-                    "name": "Const Return",
-                    "text": "Const Return CI Web Site. Built on <strong> React. All animations and transitions are custom tailored for experimental purposes.",
-                    "src": "https://constreturnbucket.s3.eu-west-2.amazonaws.com/pub/index.html"
-                    
-                },
-                "style": {
-                    "placeholder": "placeholder"
-                },
-                "theme": "iframe"
             }
         }
     }

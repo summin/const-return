@@ -20,11 +20,11 @@ body {
 
 .footer {
     height: 20px;
-    position: absolute;
+    position: fixed;
     display: inline-block;
     bottom: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     background-color: $bg-ft
 }
 
@@ -98,6 +98,14 @@ h3 {
 
 .p {
     padding: 5px
+}
+
+.blur0 {
+    filter: blur(0px)
+}
+
+.blur30 {
+    filter: blur(30px)
 }
 
 @media only screen and (max-width: 669px) {

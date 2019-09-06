@@ -2,11 +2,6 @@ import React, { useEffect } from 'react';
 
 export default ({ ...props }) => {
 
-    const style = {
-        position: "relative",
-        zIndex: "10",
-    }
-
     function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
@@ -81,8 +76,7 @@ export default ({ ...props }) => {
     return (
 
         <span
-            className={'h ' + props.counter}
-            style={style}
+            className={"h hero-letter " + props.counter }
             key={"heroLetter" + props.word + props.counter}>
             {props.letter}
         </span>

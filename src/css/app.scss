@@ -6,8 +6,8 @@
   }
   @font-face {
     font-family: 'Helvetica Neue';
-    src: url('../media/fonts/HelveticaNeue-UltraLight.otf') format('truetype');
-    font-weight: normal;
+    src: url('../media/fonts/HelveticaNeue-UltraLight.ttf') format('truetype');
+    font-weight: 100;
     font-style: normal;
   }
 
@@ -15,6 +15,8 @@ $bg-cl: #3a596c;
 $bg-wh: white;
 $bg-ft: #98c7a2;
 $cl-ft: black;
+$f-sel: #FAEBD7;
+$f-her: #FAEBD7;
 
 $f-h: "Helvetica Neue";
 $f-a: "Arial";
@@ -36,8 +38,10 @@ $f-h1: 45px;
 @import './content.scss';
 @import './styles.scss';
 @import './themes/wrapped-image.scss';
+@import './themes/article.scss';
 @import './themes/hero.scss';
 @import './themes/iframe.scss';
+@import './themes/card.scss';
 @import './nav.scss';
 @import './hero.scss';
 @import './animate.scss';

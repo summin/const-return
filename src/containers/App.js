@@ -1,13 +1,12 @@
 import React, { useEffect, Component, Fragment } from 'react';
-import Header from './Header'
+import Header from './Nav'
 import Content from './Content'
 import Footer from './Footer'
+import RightSideNav from './RightSideNav'
 
 export default class App extends Component {
 
     state = {
-        header: "",
-        result: "",
         contentA: "",
         contentB: "",
         contentCentreOpacityA: "",
@@ -54,8 +53,8 @@ export default class App extends Component {
         return (
             <Fragment>
                 <Header
-                    header={this.state.header}
                     toggle={this.state.navToggle}
+                    selected={this.state.onClickValue}
                     onClick={this.onClick} />
                 <Content
                     contentA={this.state.contentA}
