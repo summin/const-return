@@ -16,7 +16,7 @@ export default class Content extends Component {
         console.log("content updated")
         setTimeout(() => {
             this.scrollable = null;
-            this.scrollable = document.getElementsByClassName("hero")[0].getElementsByClassName("scrollTransform")
+            this.scrollable = document.getElementsByClassName("hero")
         }, 50);
     }
 
@@ -26,8 +26,9 @@ export default class Content extends Component {
             this.scrollIndexScale = 1 - 1 / (160 / e.target.scrollTop)
             this.scrollIndexPaddingTop = (e.target.scrollTop / 2) + "px"
             for (let i = 0; i < this.scrollable.length; ++i) {
-                this.scrollable[i].style.transform = "scale(" + this.scrollIndexScale + ")"
-                this.scrollable[i].style.top = this.scrollIndexPaddingTop;
+                this.scrollable[i].getElementsByClassName("scrollTransform").style.transform = "scale(" + this.scrollIndexScale + ")"
+                this.scrollable[i].getElementsByClassName("scrollTransform").style.top = this.scrollIndexPaddingTop;
+                console.log(this.scrollable[i].getElementsByClassName("scrollTransform"))
             }
         }
     }
