@@ -24,18 +24,18 @@ export default ({ ...props }) => {
         <Fragment>
             {props.content && (
                 <div className={props.theme}>
-                    {Object.keys(props.content).map((i) => {
-                        return [
-                            props.theme !== 'iframe' &&
-                            i == 'src' && <img src={images[props.content.src]}></img>,
-                            props.theme == 'iframe' &&
-                            i == 'src' && iframe_element,
-                            <div className="scrollTransform">
-                                {i == 'name' && <h3>{props.content.name}</h3>}
-                                {i == 'text' && <p>{props.content.text}</p>}
-                            </div>
-                        ]
-                    })}
+                    <div className="scrollTransform">
+                        {Object.keys(props.content).map((i) => {
+                            return [
+                                props.theme !== 'iframe' &&
+                                i == 'src' && <img src={images[props.content.src]}></img>,
+                                props.theme == 'iframe' &&
+                                i == 'src' && iframe_element,
+                                i == 'name' && <h3>{props.content.name}</h3>,
+                                i == 'text' && <p>{props.content.text}</p>
+                            ]
+                        })}
+                    </div>
                 </div>
             )}
             {(props.type == "zone") && (

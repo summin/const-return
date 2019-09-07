@@ -11,6 +11,8 @@ export default class Content extends Component {
     scrollIndexScale = 1;
     scrollIndexHeight;
     scrollIndexPaddingTop = 0;
+    scrollIndexGrad1 = 0;
+    scrollIndexGrad2 = 50;
 
     componentDidUpdate() {
         console.log("content updated")
@@ -23,12 +25,17 @@ export default class Content extends Component {
     onScroll = (e) => {
         if (e.target.scrollTop < 411) {
             console.log(e.target.scrollTop)
-            this.scrollIndexScale = 1 - 1 / (160 / e.target.scrollTop)
-            this.scrollIndexPaddingTop = (e.target.scrollTop / 2) + "px"
+            this.scrollIndexScale = 1 - 1 / (410 / e.target.scrollTop)
+            this.scrollIndexPaddingTop = (e.target.scrollTop / 2.15) + "px"
+            this.scrollIndexGrad2 = 50 + e.target.scrollTop/8
+            this.scrollIndexGrad1 = e.target.scrollTop/4
             for (let i = 0; i < this.scrollable.length; ++i) {
-                this.scrollable[i].getElementsByClassName("scrollTransform").style.transform = "scale(" + this.scrollIndexScale + ")"
-                this.scrollable[i].getElementsByClassName("scrollTransform").style.top = this.scrollIndexPaddingTop;
-                console.log(this.scrollable[i].getElementsByClassName("scrollTransform"))
+                this.scrollable[i].getElementsByClassName("scrollTransform")[0].style.transform = "scale(" + this.scrollIndexScale + ")"
+                this.scrollable[i].getElementsByClassName("scrollTransform")[0].style.top = this.scrollIndexPaddingTop;
+                this.scrollable[i].style.backgroundImage 
+                = "linear-gradient(rgba(105, 105, 105, 0) " 
+                + this.scrollIndexGrad1 + "%, rgb(17, 58, 54) " 
+                + this.scrollIndexGrad2 + "%, rgba(105, 105, 105, 0) 100%)"
             }
         }
     }
