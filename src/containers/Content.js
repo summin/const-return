@@ -1,4 +1,4 @@
-import React, {Component, useEffect } from 'react'
+import React, { Component, useEffect } from 'react'
 import ContentZoneParser from '../components/ContentZoneParser'
 import ContentHero from '../components/ContentHero'
 
@@ -7,29 +7,29 @@ export default class Content extends Component {
     state = {
         scrollIndex: 0
     }
-//
-//
-    //componentDidMount() {
-    //    this.scrollable = document.getElementsByClassName("hero")[0]
-    //}
-    //
-//
-    //onScroll = (e) => {
-    //   this.setState({scrollIndex: this.state.scrollIndex + 1})
-    //   console.log(this.state.scrollIndex)
-    //}
 
-    componentDidMount() {
+    scrollIndexScale = 1;
+    scrollIndexHeight;
+    scrollIndexPaddingTop = 0;
+
+    componentDidUpdate() {
+        console.log("content updated")
         setTimeout(() => {
-            this.scrollable = document.getElementsByClassName("hero")[0] 
-        }, 1000);
-        console.log(document.getElementsByClassName("hero")[0])
-        this.scrollcounter = 0
+            this.scrollable = null;
+            this.scrollable = document.getElementsByClassName("hero")[0].getElementsByClassName("scrollTransform")
+        }, 50);
     }
-    
 
     onScroll = (e) => {
-        this.scrollable.style.transform = "scale(" + this.scrollcounter/10 + ")"
+        if (e.target.scrollTop < 411) {
+            console.log(e.target.scrollTop)
+            this.scrollIndexScale = 1 - 1 / (160 / e.target.scrollTop)
+            this.scrollIndexPaddingTop = (e.target.scrollTop / 2) + "px"
+            for (let i = 0; i < this.scrollable.length; ++i) {
+                this.scrollable[i].style.transform = "scale(" + this.scrollIndexScale + ")"
+                this.scrollable[i].style.top = this.scrollIndexPaddingTop;
+            }
+        }
     }
 
     render() {
@@ -42,11 +42,11 @@ export default class Content extends Component {
                     />
                 </div>
                 <div
-                    className={this.props.contentCentreOpacityA  + " " + "content-fadable"}>
+                    className={this.props.contentCentreOpacityA + " " + "content-fadable"}>
                     <ContentZoneParser {...this.props.contentA} />
                 </div>
                 <div
-                    className={this.props.contentCentreOpacityB  + " " + "content-fadable"}>
+                    className={this.props.contentCentreOpacityB + " " + "content-fadable"}>
                     <ContentZoneParser {...this.props.contentB} />
                 </div>
             </div>

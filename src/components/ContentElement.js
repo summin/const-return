@@ -4,20 +4,20 @@ import PropTypes from 'prop-types'
 
 export default ({ ...props }) => {
 
-    const [iframe_element, set_iframe_element] = useState(<img src = {images.gif_taiji_spinner} />);
+    const [iframe_element, set_iframe_element] = useState(<img src={images.gif_taiji_spinner} />);
     const [iframe_opened, set_iframe_opened] = useState(false);
 
     console.log("ConteneElement Called")
 
     props.theme == 'iframe' ? (
-    useEffect(() => {
-        !iframe_opened &&
-        props.theme == 'iframe' &&
-            setTimeout(() => {
-                set_iframe_opened(true);
-                set_iframe_element(<iframe src={props.content.src}></iframe>);
-            }, 2000)
-    }) 
+        useEffect(() => {
+            !iframe_opened &&
+                props.theme == 'iframe' &&
+                setTimeout(() => {
+                    set_iframe_opened(true);
+                    set_iframe_element(<iframe src={props.content.src}></iframe>);
+                }, 2000)
+        })
     ) : ""
 
     return (
@@ -30,8 +30,10 @@ export default ({ ...props }) => {
                             i == 'src' && <img src={images[props.content.src]}></img>,
                             props.theme == 'iframe' &&
                             i == 'src' && iframe_element,
-                            i == 'name' && <h3>{props.content.name}</h3>,
-                            i == 'text' && <p>{props.content.text}</p>                            
+                            <div className="scrollTransform">
+                                {i == 'name' && <h3>{props.content.name}</h3>}
+                                {i == 'text' && <p>{props.content.text}</p>}
+                            </div>
                         ]
                     })}
                 </div>
