@@ -1,9 +1,13 @@
 .nav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     height: $h-sz-h;
     list-style-type: none;
-    text-align: center;
     font-family: $f-h;
     font-size: $f-sz-head-nav; 
     font-style: normal; 
@@ -15,11 +19,13 @@
 .nav ul {
     margin: 0;
     padding: 0px; 
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
 }
 
 .nav li {
     text-align: center;
-    display: inline-block;
     margin: 3px 0 13px;
     line-height: 50px;
     text-decoration: none;
@@ -60,14 +66,8 @@
     padding: 8px 15px;
 }
 
-.nav.account {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: $f-h3;
-    margin: 0px;
-    padding: 00px 10px;
-    line-height: 73px;
+.nav .account {
+    margin: 19px 35px 0 0;
 }
 
 .nav.dropdown li {

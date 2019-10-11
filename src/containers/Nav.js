@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Logo from '../media/images/Logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faUser } from '@fortawesome/free-solid-svg-icons'
 
 
 export default class Header extends Component {
@@ -50,6 +50,7 @@ export default class Header extends Component {
                         className={(this.state.toggle ? "show" : "") + (this.state.selected === "About" ? " selected" : "") + " noblur"}
                         onClick={this.props.onClick}>About</li>
                 </ul>
+                <FontAwesomeIcon className="account" icon={faUser} />
             </div>
         );
     }
