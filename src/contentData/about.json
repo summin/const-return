@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
     "name": "motivation",
     "type": "1-3",
     "entries": {
@@ -7,6 +8,60 @@
             "imgsrc": "",
             "title": "MOTIVATION",
             "descr": "COMING SOON"
+=======
+    "zone-0": {
+        "type": "zone",
+        "style": {
+            "type": "centre-100",
+            "width": "100%",
+            "height": "inherit"
+        },
+        "layout": "flex",
+        "entries": {
+            "technology": {
+                "content": {
+                    "name": "about",
+                    "src": "",
+                    "text": "about the author:"
+                },
+                "style": {
+                    "type": "centre-100"
+                },
+                "theme": "hero"
+            }
+        }
+    },
+    "zone-1": {
+        "type": "zone",
+        "style": {
+            "type": "centre-100"
+        },
+        "layout": "flex",
+        "entries": {
+            "aleksandr": {
+                "content": {
+                    "src": "image_Aleksandr",
+                    "name": "Aleksandr",
+                    "text": "Full Stack Web Developer, specialising in React, PHP, Javascript Redux and other company's stack languages and tools."       
+                },
+                "style": {
+                    "placeholder": "placeholder"
+                },
+                "theme": "card"
+            }, 
+            "Mini ini CMS": {
+                "content": {
+                    "name": "Mini ini CMS",
+                    "text": "Const Return CI Web Site. Built on React. All animations and transitions are custom tailored for experimental purposes.",
+                    "src": ""
+                    
+                },
+                "style": {
+                    "placeholder": "placeholder"
+                },
+                "theme": "article"
+            }
+>>>>>>> Stashed changes
         }
     }
 }

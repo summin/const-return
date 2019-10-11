@@ -1,0 +1,35 @@
+
+@media only screen and (min-width: 1700px) {
+    .centre-50 {
+        max-width: 50% !important;
+        margin: 0 25% !important;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1699px) {
+    .centre-50 {
+        max-width: 60% !important;
+        margin: 0 20% !important;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+    .centre-50 {
+        max-width: 70% !important;
+        margin: 0 15% !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .centre-50 {
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+
+.centre-100 {
+    width: 100% !important;
+    margin: 0% !important;
+}

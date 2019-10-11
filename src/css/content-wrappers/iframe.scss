@@ -35,6 +35,27 @@
     line-height: 2*$f-sz;
     font-size: 1.2*$f-sz;
     display: inline-block;
+<<<<<<< Updated upstream:src/css/content-wrappers/iframe.scss
     // border-style: dashed;
     // border-width: 1px;
 }
+=======
+}
+
+.iframe img {
+    width: 20%;
+    margin: 0 39%;
+}
+
+@media only screen and (max-width: 800px) {
+    .iframe h3 {
+        width: 100%;
+        display: inline-block;
+    }
+    .iframe p {
+        width: 100%;
+        padding: 10px;
+        display: inline-block;
+    }
+}
+>>>>>>> Stashed changes:src/css/themes/iframe.scss

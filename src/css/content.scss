@@ -15,8 +15,14 @@
     padding-bottom:200px;
     position: relative;
     overflow-y: scroll;
+<<<<<<< Updated upstream
     //border-style: dashed;
     //border-width: 3px;
+=======
+    -webkit-overflow-scrolling:touch;
+    transition: filter 0.5s;
+    border-style: dotted
+>>>>>>> Stashed changes
 }
 
 .opacity-0 {
@@ -32,6 +38,7 @@
     padding-top: 0vh;
     z-index: 1;
 }
+<<<<<<< Updated upstream
 
 @media only screen and (max-width: 700px) {
     .content-centre{
@@ -48,3 +55,5 @@
         margin-right: 10%;
     }
 }
+=======
+>>>>>>> Stashed changes

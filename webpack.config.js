@@ -53,8 +53,9 @@ const config = {
                     use: [
                         {
                             loader: 'css-loader',
+                            
                         },
-                        'sass-loader'
+                        { loader: 'sass-loader', query: { sourceMaps: true }}
                     ]
                 })
             },

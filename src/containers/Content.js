@@ -9,6 +9,7 @@ import { faMobile } from '@fortawesome/free-solid-svg-icons'
 
 export default ({ ...props }) => {
 
+<<<<<<< Updated upstream
     const cookArray = (content) => {
         let result = [];
         content.type === "iframe" &&
@@ -43,6 +44,27 @@ export default ({ ...props }) => {
                     heroAnimate={props.heroAnimate}
                     heroAnimated={props.heroAnimated}
                 />
+=======
+
+
+    render() {
+        return (
+            <div  className="contentParent">
+                <div className="of-h">
+                    <ContentHero
+                        heroAnimate={this.props.heroAnimate}
+                        heroAnimated={this.props.heroAnimated}
+                    />
+                </div>
+                <div
+                    className={this.props.contentCentreOpacityA + " " + "content-fadable"}>
+                    <ContentZoneParser {...this.props.contentA} />
+                </div>
+                <div
+                    className={this.props.contentCentreOpacityB + " " + "content-fadable"}>
+                    <ContentZoneParser {...this.props.contentB} />
+                </div>
+>>>>>>> Stashed changes
             </div>
             <div
                 className={"content-centre " + props.contentCentreOpacityA}>
