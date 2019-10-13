@@ -19,12 +19,12 @@ export default class Header extends Component {
                 selected: this.props.selected
             })
             : ""
-            const x = document.getElementsByClassName("contentParent")[0]
-            !this.state.toggle ? x.setAttribute("class","blur0 contentParent") : x.setAttribute("class","blur30 contentParent")
+        const x = document.getElementsByClassName("contentParent")[0]
+        !this.state.toggle ? x.setAttribute("class", "blur0 contentParent") : x.setAttribute("class", "blur30 contentParent")
     }
 
     onClick = () => {
-        this.setState({ toggle: !this.state.toggle })  
+        this.setState({ toggle: !this.state.toggle })
     }
 
     render() {
@@ -36,7 +36,7 @@ export default class Header extends Component {
                     className="menu-toggler">
                     <FontAwesomeIcon icon={faBars} />
                 </div>
-                <ul>
+                <ul className={this.state.toggle ? "show" : ""}>
                     <li
                         className={(this.state.toggle ? "show" : "") + (this.state.selected === "Technology" ? " selected" : "") + " noblur"}
                         onClick={this.props.onClick}>Technology</li>
