@@ -11,8 +11,8 @@ import ContentHeroLetter from './ContentHeroLetter'
 export default class ContentHero extends Component {
 
     render() {
-        const wordA = "Const"
-        const wordB = "return"
+        const wordA = this.props.StringA
+        const wordB = this.props.StringB
         const length = wordA.length + wordB.length
         let counter = 0;
         const wordSlice = (word) => {

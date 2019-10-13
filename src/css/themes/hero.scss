@@ -20,10 +20,11 @@
 
 .sticky-hero {
     position: sticky;
-    top: -200px;
+    top: -170px;
 }
 
 .hero h3 {
+    position: relative;
     font-family: $f-h;
     font-style: normal;
     font-weight: 100;

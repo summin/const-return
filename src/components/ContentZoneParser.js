@@ -11,7 +11,7 @@ export default ({ ...props }) => {
             Object.keys(entries).map((i) => {
                 content.push(
                     <ContentElement
-                        key={cuid()}
+                        key={i}
                         {...entries[i]} />);
             })
         }
@@ -26,7 +26,7 @@ export default ({ ...props }) => {
                 const zone = props['zone-' + i]
                 content.push(
                     <ContentElement
-                        key={cuid()}
+                        key={i}
                         type={zone.type}
                         style={zone.style}
                         layout={zone.layout}

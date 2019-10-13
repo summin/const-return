@@ -2,6 +2,7 @@ import React, { useEffect, Component, Fragment } from 'react';
 import Header from './Nav'
 import Content from './Content'
 import Footer from './Footer'
+import HeroLogo from '../components/HeroLogo'
 import RightSideNav from './RightSideNav'
 
 export default class App extends Component {
@@ -56,13 +57,20 @@ export default class App extends Component {
                     toggle={this.state.navToggle}
                     selected={this.state.onClickValue}
                     onClick={this.onClick} />
-                <Content
-                    contentA={this.state.contentA}
-                    contentB={this.state.contentB}
-                    contentCentreOpacityA={this.state.contentCentreOpacityA}
-                    contentCentreOpacityB={this.state.contentCentreOpacityB}
-                    heroAnimate={this.state.heroAnimate}
-                    heroAnimated={this.state.heroAnimated} />
+                
+                    <div className="of-h">
+                        <HeroLogo
+                            heroAnimate={this.state.heroAnimate}
+                            heroAnimated={this.state.heroAnimated}
+                            StringA="Const"
+                            StringB="return"
+                        />
+                    </div>
+                    <Content
+                        contentA={this.state.contentA}
+                        contentB={this.state.contentB}
+                        contentCentreOpacityA={this.state.contentCentreOpacityA}
+                        contentCentreOpacityB={this.state.contentCentreOpacityB} />
 
                 <Footer
                     footer={this.state.footer} />
