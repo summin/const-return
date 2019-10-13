@@ -1,5 +1,5 @@
 .hero {
-    position: relative;
+
     display: flex;
     flex-flow: column;
     align-content: center;
@@ -7,45 +7,60 @@
     height: 400px;
     padding-top: 100px;
     font-family: $f-h;
-    font-style: normal; 
+    font-style: normal;
     font-weight: 100;
-    font-variant:  normal;
+    font-variant: normal;
     color: $f-her;
-    font-size: 0.5 * $f-h1;   
+    font-size: 0.5 * $f-h1;
     background-image: linear-gradient(rgba(105, 105, 105, 0) 0%, rgb(17, 58, 54) 50%, rgba(105, 105, 105, 0) 100%);
     text-align: center;
+    border-style: dotted;
+    overflow-y: visible
+}
+
+.sticky-hero {
+    position: sticky;
+    top: -200px;
 }
 
 .hero h3 {
     font-family: $f-h;
-    font-style: normal; 
+    font-style: normal;
     font-weight: 100;
-    font-variant:  normal;
+    font-variant: normal;
     font-size: 3 * $f-h1;
     margin: 0;
+    overflow-y: visible
 }
 
 .hero p {
-    margin: 3vh 10px 0;
+    top: 60px;
+    margin: 0 0;
     font-weight: 200;
 }
 
 .scrollTransform {
-    position:relative
+    position: sticky;
+    top: 100
 }
 
-@media only screen and (max-width: 500px)  {
+.scrollTransform h3 {
+    position: sticky;
+    top: 100
+}
+
+@media only screen and (max-width: 500px) {
     .hero h3 {
         font-size: 1 * $f-h1;
         margin: 0;
-    
+
     }
 }
 
-@media only screen and (max-width: 800px) and (min-width: 501px){
+@media only screen and (max-width: 800px) and (min-width: 501px) {
     .hero h3 {
         font-size: 2 * $f-h1;
         margin: 0;
-    
+
     }
 }

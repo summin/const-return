@@ -24,7 +24,6 @@ export default ({ ...props }) => {
         <Fragment>
             {props.content && (
                 <div className={props.theme}>
-                    <div className="scrollTransform">
                         {Object.keys(props.content).map((i) => {
                             return [
                                 props.theme !== 'iframe' &&
@@ -35,7 +34,6 @@ export default ({ ...props }) => {
                                 i == 'text' && <p>{props.content.text}</p>
                             ]
                         })}
-                    </div>
                 </div>
             )}
             {(props.type == "zone") && (

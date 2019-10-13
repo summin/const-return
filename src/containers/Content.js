@@ -14,15 +14,8 @@ export default class Content extends Component {
     scrollIndexGrad1 = 0;
     scrollIndexGrad2 = 50;
 
-    componentDidUpdate() {
-        console.log("content updated")
-        setTimeout(() => {
-            this.scrollable = null;
-            this.scrollable = document.getElementsByClassName("hero")
-        }, 50);
-    }
 
-    onScroll = (e) => {
+    onScroll1 = (e) => {
         if (e.target.scrollTop < 411) {
             console.log(e.target.scrollTop)
             this.scrollIndexScale = 1 - 1 / (410 / e.target.scrollTop)
@@ -38,6 +31,18 @@ export default class Content extends Component {
                 + this.scrollIndexGrad2 + "%, rgba(105, 105, 105, 0) 100%)"
             }
         }
+    }
+
+    onScroll = (e) => {
+        let p = document.getElementsByClassName("hero")[0].children[2];
+        if (p.getBoundingClientRect().y <= 63) {
+            p.style.position = 'fixed'
+            p.style.left = "calc(50% - " + document.getElementsByClassName("hero")[0].children[2].offsetWidth/2 + "px - 6px)"
+            p.style.margin = "0"
+            console.log("calc(50% - " + document.getElementsByClassName("hero")[0].children[2].clientWidth + "px)")
+        }
+        ;
+
     }
 
     render() {
