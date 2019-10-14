@@ -9,19 +9,23 @@ $f-wg-hero-animated-hx: 100;
 
 .hero-animated {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     left: 0;
-    height: calc(100vh - 90px);
-    margin: 0 ;
+    height: calc(100vh);
+    margin: 0;
     text-align: center;
     overflow: hidden;
-    padding: 10vh 0 0vh 0;
-    -webkit-transition:  padding-top 1s ease-in; /* Safari prior 6.1 */
-    transition: padding-top 1s ease-in-out; 
-    -webkit-user-select: none; /* Chrome all / Safari all */
-    -moz-user-select: none;    /* Firefox all             */
-    -ms-user-select: none;     /* IE 10+                  */
+    padding: 10% 0 0vh 0;
+    -webkit-transition: padding-top 1s ease-in;
+    /* Safari prior 6.1 */
+    transition: padding-top 1s ease-in-out;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all             */
+    -ms-user-select: none;
+    /* IE 10+                  */
     user-select: none;
 
 }
@@ -34,10 +38,11 @@ $f-wg-hero-animated-hx: 100;
     margin: 0 25% 0 25%;
     max-height: 3ex;
     text-align: center;
-    font-family: $f-g; 
+    font-family: $f-g;
     font-size: $f-sz-hero-animated-hx;
-    -webkit-transition:  font-size 0.6s ease-out; /* Safari prior 6.1 */
-    transition: font-size 0.6s ease-out; 
+    -webkit-transition: font-size 0.6s ease-out;
+    /* Safari prior 6.1 */
+    transition: font-size 0.6s ease-out;
 }
 
 .hero-animated-b {
@@ -51,15 +56,17 @@ $f-wg-hero-animated-hx: 100;
     margin: 0 25vw 0 25vw;
     text-align: center;
     font-weight: $f-wg-hero-animated-hx;
-    font-family: $f-h; 
+    font-family: $f-h;
     font-size: $f-sz-hero-animated-hx;
-    -webkit-transition:  font-size 0.6s ease-out; /* Safari prior 6.1 */
-    transition: font-size 0.6s ease-out; 
+    -webkit-transition: font-size 0.6s ease-out;
+    /* Safari prior 6.1 */
+    transition: font-size 0.6s ease-out;
 }
- .hero-letter {
-     position: relative;
-     z-index: 2 !important;
- }
+
+.hero-letter {
+    position: relative;
+    z-index: -2 !important;
+}
 
 
 
@@ -100,6 +107,7 @@ $f-wg-hero-animated-hx: 100;
     .hero-animated-a {
         font-size: $f-sz-hero-animated-hx;
     }
+
     .hero-animated-b {
         font-size: $f-sz-hero-animated-hx;
     }
@@ -109,6 +117,7 @@ $f-wg-hero-animated-hx: 100;
     .hero-animated-a {
         font-size: $f-sz-hero-animated-hx + 700%;
     }
+
     .hero-animated-b {
         font-size: $f-sz-hero-animated-hx + 700%;
     }
@@ -118,6 +127,7 @@ $f-wg-hero-animated-hx: 100;
     .hero-animated-a {
         font-size: $f-sz-hero-animated-hx + 1300%;
     }
+
     .hero-animated-b {
         font-size: $f-sz-hero-animated-hx + 1300%;
     }
@@ -127,8 +137,8 @@ $f-wg-hero-animated-hx: 100;
     .hero-animated-a {
         font-size: $f-sz-hero-animated-hx + 2000%;
     }
+
     .hero-animated-b {
         font-size: $f-sz-hero-animated-hx + 2000%;
     }
 }
-

@@ -9,21 +9,10 @@ export default ({ ...props }) => {
 
     console.log("ConteneElement Called")
 
-    props.theme == 'iframe' ? (
-        useEffect(() => {
-            !iframe_opened &&
-                props.theme == 'iframe' &&
-                setTimeout(() => {
-                    set_iframe_opened(true);
-                    set_iframe_element(<iframe src={props.content.src}></iframe>);
-                }, 2000)
-        })
-    ) : ""
-
     return (
         <Fragment>
             {props.content && (
-                <div className={props.theme}>
+                <div key={props.theme} className={props.theme}>
                         {Object.keys(props.content).map((i) => {
                             return [
                                 props.theme !== 'iframe' &&
@@ -37,7 +26,7 @@ export default ({ ...props }) => {
                 </div>
             )}
             {(props.type == "zone") && (
-                <div className={"zone " + props.layout + " " + props.style.type}>
+                <div key={props.theme} className={"zone " + props.layout + " " + props.style.type + " " + props.main}>
                     {props.children}
                 </div>)}
         </Fragment>

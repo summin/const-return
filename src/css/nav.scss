@@ -9,19 +9,20 @@
     height: $h-sz-h;
     list-style-type: none;
     font-family: $f-h;
-    font-size: $f-sz-head-nav; 
-    font-style: normal; 
+    font-size: $f-sz-head-nav;
+    font-style: normal;
     font-weight: 100;
-    font-variant:  normal;
-    z-index: 1;
+    font-variant: normal;
+    z-index: 3;
 }
 
 .nav ul {
     margin: 0;
-    padding: 0px; 
+    padding: 0px;
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    z-index: 30;
 }
 
 .nav li {
@@ -31,12 +32,16 @@
     text-decoration: none;
     filter: drop-shadow(2px 2px 1px #9a9ab8);
     z-index: 1;
-    -webkit-user-select: none; /* Chrome all / Safari all */
-    -moz-user-select: none;    /* Firefox all             */
-    -ms-user-select: none;     /* IE 10+                  */
-     user-select: none;
-     transition: transform 0.3s;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all             */
+    -ms-user-select: none;
+    /* IE 10+                  */
+    user-select: none;
+    transition: transform 0.3s;
     border-radius: 10px;
+    z-index: 30;
 }
 
 .nav li:hover {
@@ -44,25 +49,23 @@
 }
 
 .menu-toggler {
+    position: absolute;
+    margin: 0 48%;
     padding-top: 15px;
-    font-size: 35px; 
+    font-size: 35px;
     transition: font-size 0.4s, padding-top 0.4s;
 }
 
-.menu-toggler:hover { 
-    cursor: pointer; 
+.menu-toggler:hover {
+    cursor: pointer;
 }
 
-.nav li:hover { 
-    cursor: pointer; 
+.nav li:hover {
+    cursor: pointer;
 }
 
 .nav img {
     height: $h-sz-h;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
     margin: 0px;
     padding: 8px 15px;
     filter: drop-shadow(2px 2px 1px #9a9ab8);
@@ -72,11 +75,9 @@
     margin: 19px 35px 0 0;
 }
 
-.nav ul{
-    display: none;
+.nav a {
+    color: inherit;
 }
-
-.nav a { color: inherit; } 
 
 .nav li.selected {
     color: $f-sel !important;
@@ -89,22 +90,21 @@
 }
 
 @media only screen and (max-width: 669px) {
-    .nav ul  {
+    .nav ul {
+        position: absolute;
         padding: 40px 0;
+        width: 50%;
         top: 30px;
         margin: 0 25%;
+        display: none;
     }
+
     .nav li {
+        color: rgb(32, 15, 65);
         position: relative;
         display: none;
         z-index: 20;
         background-color: $bg-cl;
-        }
-}
-
-@media only screen and (max-width: 800px) {
-    .nav li {
-        padding: 10px 10px 6px;
     }
 }
 

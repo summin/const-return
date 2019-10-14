@@ -57,21 +57,19 @@ export default class App extends Component {
                     toggle={this.state.navToggle}
                     selected={this.state.onClickValue}
                     onClick={this.onClick} />
-                
-                    <div className="of-h">
-                        <HeroLogo
-                            heroAnimate={this.state.heroAnimate}
-                            heroAnimated={this.state.heroAnimated}
-                            StringA="Const"
-                            StringB="return"
-                        />
-                    </div>
-                    <Content
-                        contentA={this.state.contentA}
-                        contentB={this.state.contentB}
-                        contentCentreOpacityA={this.state.contentCentreOpacityA}
-                        contentCentreOpacityB={this.state.contentCentreOpacityB} />
-
+                <div className="of-h">
+                    <HeroLogo
+                        heroAnimate={this.state.heroAnimate}
+                        heroAnimated={this.state.heroAnimated}
+                        StringA="Const"
+                        StringB="return"
+                    />
+                </div>
+                <Content
+                    contentA={this.state.contentA}
+                    contentB={this.state.contentB}
+                    contentCentreOpacityA={this.state.contentCentreOpacityA}
+                    contentCentreOpacityB={this.state.contentCentreOpacityB} />
                 <Footer
                     footer={this.state.footer} />
             </Fragment>

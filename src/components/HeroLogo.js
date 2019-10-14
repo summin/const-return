@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import ContentHeroLetter from './ContentHeroLetter'
+import ContentHeroLetter from './HeroLogoLetter'
 
 // PROPS
 // letter
@@ -29,6 +29,7 @@ export default class ContentHero extends Component {
                         return (
                             <ContentHeroLetter
                                 letter={i}
+                                key={counter}
                                 counter={counter}
                                 word="a"
                                 animate={this.props.heroAnimate}
@@ -42,6 +43,7 @@ export default class ContentHero extends Component {
                         return (
                             <ContentHeroLetter
                                 letter={i}
+                                key={counter}
                                 word="b"
                                 counter={counter}
                                 animate={this.props.heroAnimate}

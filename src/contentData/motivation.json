@@ -2,13 +2,13 @@
     "zone-0": {
         "type": "zone",
         "style": {
-            "type": "centre-100",
+            "type": "centre-100 sticky-hero",
             "width": "100%",
             "height": "inherit"
         },
         "layout": "flex",
         "entries": {
-            "technology": {
+            "main": {
                 "content": {
                     "name": "motivation",
                     "src": "",

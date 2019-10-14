@@ -30,7 +30,9 @@ export default class Header extends Component {
     render() {
         return (
             <div className="nav">
-                <a href=""><img src={Logo} /></a>
+                <div>
+                    <a href=""><img src={Logo} /></a>
+                </div>
                 <div
                     onClick={this.onClick}
                     className="menu-toggler">

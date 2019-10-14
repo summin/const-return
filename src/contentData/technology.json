@@ -8,7 +8,7 @@
         },
         "layout": "flex",
         "entries": {
-            "technology": {
+            "main": {
                 "content": {
                     "name": "technology",
                     "src": "",

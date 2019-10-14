@@ -10,6 +10,12 @@ body {
     text-align: justify;
 } 
 
+a {
+    color: black;
+    text-decoration: none;
+    padding: 0 2px;
+}
+
 .of-h {
     overflow: hidden;
 }
@@ -21,7 +27,9 @@ body {
 .footer {
     height: 20px;
     position: fixed;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     bottom: 0;
     width: 100%;
     z-index: 3;
@@ -96,9 +104,7 @@ h3 {
     max-width: inherit;
 }
 
-.p {
-    padding: 5px
-}
+
 
 .blur0 {
     filter: blur(0px)
