@@ -12,7 +12,7 @@
                 "content": {
                     "name": "about",
                     "src": "",
-                    "text": "our team:"
+                    "text": "info:"
                 },
                 "style": {
                     "type": "centre-100"
@@ -32,45 +32,12 @@
                 "content": {
                     "src": "image_Aleksandr",
                     "name": "Aleksandr",
-                    "text": "Full Stack Web Developer, specialising in React, PHP, Javascript Redux and other company's stack languages and tools."       
+                    "text": ["Full Stack Web Developer, specialising in React, PHP, Javascript Redux and other company's stack languages and tools.", "\n", "Location"]    
                 },
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "card"
-            },
-            "dmitri": {
-                "content": {
-                    "src": "image_Dmitri",
-                    "name": "Dmitri",
-                    "text": "SaaS Infrastructure Architect and Buisness Analyst"
-                },
-                "style": {
-                    "placeholder": "placeholder"
-                },
-                "theme": "card"
-            },
-            "anna": {
-                "content": {
-                    "src": "image_Annaa",
-                    "name": "Anna",
-                    "text": "United Kingdom, Latvia, Lituania, Estonia, Ukraine and Russia Sales Manager"
-                },
-                "style": {
-                    "placeholder": "placeholder"
-                },
-                "theme": "card"
-            },
-            "martina": {
-                "content": {
-                    "src": "image_Martina",
-                    "name": "Martina",
-                    "text": "Financial Strategist, Germany and Italy Sales Manager"
-                },
-                "style": {
-                    "placeholder": "placeholder"
-                },
-                "theme": "card"
+                "theme": "article"
             }
         }
     }

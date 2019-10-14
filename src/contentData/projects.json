@@ -12,7 +12,7 @@
                 "content": {
                     "name": "projects",
                     "src": "",
-                    "text": "some of the systems that we've developed recently:"
+                    "text": "recent deployments:"
                 },
                 "style": {
                     "type": "centre-100"
@@ -24,33 +24,42 @@
     "zone-1": {
         "type": "zone",
         "style": {
-            "type": "centre-50"
+            "type": "centre-75"
         },
         "layout": "flex",
         "entries": {
-            "const-return": {
+            "rp": {
                 "content": {
-                    "name": "Const Return",
-                    "text": "Const Return CI Web Site. Built on <strong> React. All animations and transitions are custom tailored for experimental purposes.",
-                    "src": "https://constreturnbucket.s3.eu-west-2.amazonaws.com/pub/index.html"
-                    
+                    "name": "Reportable",
+                    "text": "Enterprise procurement requests management and analytics. Built using React, Redux, SCSS, Bootstrap. Backend is built on node.js with express.js as primary engine. MongoDB + Mongoose is used for user and units data sotrage",
+                    "src": "rp"
                 },
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "iframe"
+                "theme": "gallery"
             },
-            "Mini ini CMS": {
+            "mic": {
                 "content": {
                     "name": "Mini ini CMS",
-                    "text": "Const Return CI Web Site. Built on React. All animations and transitions are custom tailored for experimental purposes.",
-                    "src": ""
-                    
+                    "text": "Mini CMS client built for PHP apps, relying on *.ini files as a source of text and config. React, Redux, PHP and Bootstrap was used in development",
+                    "src": "mic"
                 },
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "iframe"
+                "theme": "gallery"
+            },
+            "cr": {
+                "content": {
+                    "name": "Const Return",
+                    "text": "Const Return CI Web Site. Built on React and SCSS. No other libraries were used. All animations and transitions are custom tailored for experimental purposes, using raw JS and SCSS.",
+                    "src": "cr"
+                },
+                "style": {
+                    "placeholder": "placeholder"
+                },
+                "theme": "gallery"
             }
         }
     }

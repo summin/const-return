@@ -6,10 +6,8 @@ export default class Footer extends Component {
         console.log("Footer RENDERED")
         return (
             <div className="footer">
-            <a href = "mailto: abc@example.com">Contact Us</a>
-            
+            <a href = "mailto: alexander.leontjev@gmail.com">Contact Us</a>
             © ConstReturn
-
             </div>
         );
     }

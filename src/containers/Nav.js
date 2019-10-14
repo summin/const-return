@@ -46,9 +46,6 @@ export default class Header extends Component {
                         className={(this.state.toggle ? "show" : "") + (this.state.selected === "Projects" ? " selected" : "") + " noblur"}
                         onClick={this.props.onClick}>Projects</li>
                     <li
-                        className={(this.state.toggle ? "show" : "") + (this.state.selected === "Motivation" ? " selected" : "") + " noblur"}
-                        onClick={this.props.onClick}>Motivation</li>
-                    <li
                         className={(this.state.toggle ? "show" : "") + (this.state.selected === "About" ? " selected" : "") + " noblur"}
                         onClick={this.props.onClick}>About</li>
                 </ul>

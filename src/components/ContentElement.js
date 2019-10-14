@@ -1,13 +1,8 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import * as images from '../media/images/index.js'
-import PropTypes from 'prop-types'
+import Gallery from './Gallery'
 
 export default ({ ...props }) => {
-
-    const [iframe_element, set_iframe_element] = useState(<img src={images.gif_taiji_spinner} />);
-    const [iframe_opened, set_iframe_opened] = useState(false);
-
-    console.log("ConteneElement Called")
 
     return (
         <Fragment>
@@ -15,10 +10,10 @@ export default ({ ...props }) => {
                 <div key={props.theme} className={props.theme}>
                         {Object.keys(props.content).map((i) => {
                             return [
-                                props.theme !== 'iframe' &&
-                                i == 'src' && <img src={images[props.content.src]}></img>,
-                                props.theme == 'iframe' &&
-                                i == 'src' && iframe_element,
+                                props.theme !== 'gallery' &&
+                                i == 'src' && <img src={images[props.content.src]}/>,
+                                props.theme == 'gallery' &&
+                                i == 'src' && <Gallery src={images[props.content.src]}/>,
                                 i == 'name' && <h3>{props.content.name}</h3>,
                                 i == 'text' && <p>{props.content.text}</p>
                             ]
@@ -32,13 +27,4 @@ export default ({ ...props }) => {
         </Fragment>
     );
 
-}
-
-const proptypes = {
-    type: PropTypes.string,
-    name: PropTypes.string,
-    text: PropTypes.string,
-    src: PropTypes.string,
-    style: PropTypes.object,
-    layout: PropTypes.string,
 }
