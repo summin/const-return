@@ -12,7 +12,7 @@
                 "content": {
                     "name": "about",
                     "src": "",
-                    "text": "info:"
+                    "text": "author:"
                 },
                 "style": {
                     "type": "centre-100"

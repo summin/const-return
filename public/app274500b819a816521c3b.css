@@ -148,7 +148,8 @@ h3 {
   right: 0px;
   height: 100vh;
   opacity: 0.0;
-  z-index: -2; }
+  z-index: -2;
+  overflow: hidden; }
 
 .opacity-1 {
   position: absolute;
@@ -411,7 +412,6 @@ h3 {
 
 .card {
   width: 250px;
-  height: 400px;
   text-align: center;
   margin: 0.5%;
   display: block;
@@ -652,7 +652,7 @@ h3 {
     top: 0px;
     font-size: 300%; }
   to {
-    top: 400px;
+    top: 200px;
     font-size: 0ex; } }
 
 @keyframes FromHighToLow {
@@ -660,7 +660,7 @@ h3 {
     top: 0px;
     font-size: 3ex; }
   to {
-    top: -400px;
+    top: -200px;
     font-size: 0ex; } }
 
 .animateITDown {
@@ -674,7 +674,7 @@ h3 {
     top: 0px;
     font-size: 300%; }
   to {
-    top: 400px;
+    top: 200px;
     font-size: 0ex; } }
 
 @keyframes FromLowtoHigh {

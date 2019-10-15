@@ -41,6 +41,7 @@ export default ({ ...props }) => {
             const elem = document.getElementsByClassName('h ' + props.counter)[0]
             let a = 1, b = 1, counter = 2;
             let run = setInterval(() => {
+                console.log("a")
                 ++b
                 a = b / 10
                 counter = (counter * 2) / 1.9
