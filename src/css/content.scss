@@ -1,16 +1,17 @@
 .content-fadable {
-    height: 100vh;
     opacity: 0.0;
     transition: opacity transform height padding-top 0.7s;
     transition:  0.7s;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling:touch;
+    
+    overflow-y: visible
 }
 
 .contentParent {
+    overflow-y: scroll;
     height: calc(100vh - 20px);
     position: relative;
     transition: filter 0.5s;
+    -webkit-overflow-scrolling:touch;
 }
 
 .opacity-0 {
