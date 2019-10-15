@@ -12,8 +12,6 @@ export default ({ ...props }) => {
         order == "right" && setimgF(!(imgF === props.src.length-1) ? imgF + 1 : 0)
         order == "left" && setimgF(!(imgF == 0) ? imgF - 1 : props.src.length-1)
     }
-
-    console.log(props.src)
     return (
         <Fragment>
             <div className="gallery-slider">

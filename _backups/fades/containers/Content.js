@@ -10,7 +10,6 @@ export default class Content extends Component {
     }
 
     render() {
-        console.log("Content RENDERED")
         return (
             <div className="contentParent">
                 <ContentHero

@@ -301,13 +301,15 @@ h3 {
   font-variant: normal;
   color: #FAEBD7;
   font-size: 22.5px;
-  background-image: linear-gradient(rgba(105, 105, 105, 0) 0%, #113a36 50%, rgba(105, 105, 105, 0) 100%);
+  background-image: linear-gradient(#113a36 0%, #113a36 70%, rgba(105, 105, 105, 0) 100%);
   text-align: center;
   overflow-y: visible; }
 
 .sticky-hero {
+  position: -webkit-sticky;
+  /* Safari */
   position: sticky;
-  top: -170px; }
+  top: -220px; }
 
 .hero h3 {
   position: relative;
@@ -316,12 +318,11 @@ h3 {
   font-weight: 100;
   font-variant: normal;
   font-size: 135px;
-  margin: 0;
-  overflow-y: visible; }
+  margin: 0; }
 
 .hero p {
   top: 60px;
-  margin: 0 0;
+  margin: 30px 0 0;
   font-weight: 200; }
 
 .scrollTransform {
@@ -552,6 +553,9 @@ h3 {
   font-variant: normal;
   z-index: 3; }
 
+.nav.bgi {
+  background-image: linear-gradient(#113a36 0%, #113a36 60%, rgba(105, 105, 105, 0) 100%); }
+
 .nav ul {
   margin: 0;
   padding: 0 5vw 0 0;
@@ -562,10 +566,9 @@ h3 {
 
 .nav li {
   text-align: center;
-  color: #004b06;
+  color: #888076;
   margin: 10px 0 13px;
   text-decoration: none;
-  filter: drop-shadow(2px 2px 1px #9a9ab8);
   z-index: 1;
   -webkit-user-select: none;
   /* Chrome all / Safari all */
@@ -577,6 +580,9 @@ h3 {
   transition: transform 0.3s;
   border-radius: 10px;
   z-index: 30; }
+
+.nav li.nothingSelected {
+  color: #2d2a27; }
 
 .nav li:hover {
   transform: scale(1.2); }
@@ -647,7 +653,7 @@ h3 {
     top: 0px;
     font-size: 300%; }
   to {
-    top: 400px;
+    top: 800px;
     font-size: 0ex; } }
 
 @keyframes FromHighToLow {
@@ -655,7 +661,7 @@ h3 {
     top: 0px;
     font-size: 3ex; }
   to {
-    top: -400px;
+    top: -800px;
     font-size: 0ex; } }
 
 .animateITDown {
@@ -669,7 +675,7 @@ h3 {
     top: 0px;
     font-size: 300%; }
   to {
-    top: 400px;
+    top: 800px;
     font-size: 0ex; } }
 
 @keyframes FromLowtoHigh {

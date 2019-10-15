@@ -14,7 +14,10 @@
     font-weight: 100;
     font-variant: normal;
     z-index: 3;
-    background-image: linear-gradient(rgba(17, 58, 54, 1) 0%, rgb(17, 58, 54) 50%, rgba(105, 105, 105, 0) 100%);
+}
+
+.nav.bgi {
+    background-image: linear-gradient(rgba(17, 58, 54, 1) 0%, rgb(17, 58, 54) 60%, rgba(105, 105, 105, 0) 100%);
 }
 
 .nav ul {
@@ -28,10 +31,9 @@
 
 .nav li {
     text-align: center;
-    color: rgb(0, 75, 6);
+    color: rgb(136, 128, 118);
     margin: 10px 0 13px;
     text-decoration: none;
-    filter: drop-shadow(2px 2px 1px #9a9ab8);
     z-index: 1;
     -webkit-user-select: none;
     /* Chrome all / Safari all */
@@ -43,6 +45,10 @@
     transition: transform 0.3s;
     border-radius: 10px;
     z-index: 30;
+}
+
+.nav li.nothingSelected {
+    color: rgb(45, 42, 39);
 }
 
 .nav li:hover {

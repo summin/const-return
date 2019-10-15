@@ -3,13 +3,9 @@ import React, { useState, useEffect } from 'react';
 
 export default ({ ...props }) => {
 
-    const [state, setstate] = useState()
-
-    console.log("h3 rendered" + props.text)
-    
+    const [state, setstate] = useState()    
 
         document.getElementsByClassName("content-fadable A")[0].addEventListener("scroll", function(){
-            console.log(state)
             setstate(document.getElementsByClassName("content-fadable A")[0].scrollTop)
         });
 

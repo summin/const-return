@@ -11,8 +11,6 @@ export default class Header extends Component {
     }
 
     render() {
-
-        console.log("Header RENDERED")
         return (
             <div className="nav">
             <a href=""><img src={Logo}/></a>
