@@ -40,13 +40,13 @@ export default class Header extends Component {
                 </div>
                 <ul className={this.state.toggle ? "show" : ""}>
                     <li
-                        className={(this.state.toggle ? "show" : "") + (this.state.selected === "Technology" ? " selected" : "") + " noblur"}
+                        className={(this.state.toggle ? "show" : "") + (this.state.selected === "Technology" ? " selected" : "") + " noblur" + (!this.state.selected ? " nothingSelected" : "")}
                         onClick={this.props.onClick}>Technology</li>
                     <li
-                        className={(this.state.toggle ? "show" : "") + (this.state.selected === "Projects" ? " selected" : "") + " noblur"}
+                        className={(this.state.toggle ? "show" : "") + (this.state.selected === "Projects" ? " selected" : "") + " noblur" + (!this.state.selected ? " nothingSelected" : "")}
                         onClick={this.props.onClick}>Projects</li>
                     <li
-                        className={(this.state.toggle ? "show" : "") + (this.state.selected === "About" ? " selected" : "") + " noblur"}
+                        className={(this.state.toggle ? "show" : "") + (this.state.selected === "About" ? " selected" : "") + " noblur" + (!this.state.selected ? " nothingSelected" : "")}
                         onClick={this.props.onClick}>About</li>
                 </ul>
                 <FontAwesomeIcon className="account" icon={faUser} />

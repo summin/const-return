@@ -21,7 +21,7 @@
     "zone-1": {
         "type": "zone",
         "style": {
-            "type": "centre-50"
+            "type": "centre-50 under-hero"
         },
         "layout": "flex",
         "entries": {

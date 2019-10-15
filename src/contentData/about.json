@@ -12,7 +12,7 @@
                 "content": {
                     "name": "about",
                     "src": "",
-                    "text": "info:"
+                    "text": "author:"
                 },
                 "style": {
                     "type": "centre-100"
@@ -24,7 +24,7 @@
     "zone-1": {
         "type": "zone",
         "style": {
-            "type": "centre-50"
+            "type": "centre-50 under-hero"
         },
         "layout": "flex",
         "entries": {
@@ -32,12 +32,12 @@
                 "content": {
                     "src": "image_Aleksandr",
                     "name": "Aleksandr",
-                    "text": ["Full Stack Web Developer, specialising in React, PHP, Javascript Redux and other company's stack languages and tools.", "\n", "Location"]    
+                    "text": ["Full Stack Web Developer, with experience in React, Redux, PHP(including twig), Javascript, node.js, express.js, mongoDB, mongoose, MySQL, Linux(including Apache) and other peripheral tools and tech.", "\n", "Location: Berlin"]    
                 },
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "article"
+                "theme": "card"
             }
         }
     }
