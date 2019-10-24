@@ -41,8 +41,8 @@ export default ({ ...props }) => {
     }
 
     return (
-        <Fragment key={cuid()}>
+        <div>
             {zoneParser()}
-        </Fragment>
+        </div>
     );
 }

@@ -1,5 +1,6 @@
 .nav {
-    position: absolute;
+    position: fixed;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,12 +14,10 @@
     font-style: normal;
     font-weight: 100;
     font-variant: normal;
+    background-color: $bg-cl;
     z-index: 3;
 }
 
-.nav.bgi {
-    background-image: linear-gradient(rgba(17, 58, 54, 1) 0%, rgb(17, 58, 54) 60%, rgba(105, 105, 105, 0) 100%);
-}
 
 .nav ul {
     margin: 0;

@@ -1,22 +1,21 @@
 .content-fadable {
     opacity: 0.0;
-    transition: opacity transform height padding-top 0.7s;
-    transition:  0.7s;
-    
+    transition: opacity transform height padding-top 0.7s ease-in-out;
+    transition:  0.7s ease-in-out;
     overflow-y: visible
 }
 
 .contentParent {
-    overflow-y: scroll;
-    height: calc(100vh - 20px);
+    padding-top: $h-sz-h;
+    overflow-y:scroll;
+    height: 100vh;
     position: relative;
     transition: filter 0.5s;
-    -webkit-overflow-scrolling:touch;
 }
 
 .opacity-0 {
     position: absolute;
-    padding-top: 3vh;
+    margin-top: - 3vh;
     left: 0px;
     top: 0px;
     right: 0px;
@@ -31,8 +30,9 @@
     left: 0px;
     top: 0px;
     right: 0px;
+    height: 100vh;
     opacity: 1.0;
-    padding-top: 0vh;
+    margin-top: $h-sz-h;
     padding-bottom: 100px;
     z-index: 1;
 }

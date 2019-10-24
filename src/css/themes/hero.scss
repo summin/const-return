@@ -1,18 +1,16 @@
 .hero {
-
     display: flex;
     flex-flow: column;
     align-content: center;
     width: 100%;
-    height: 400px;
-    padding-top: 100px;
+    height: 220px;
+    padding-top: 10px;
     font-family: $f-h;
     font-style: normal;
     font-weight: 100;
     font-variant: normal;
     color: $f-her;
     font-size: 0.5 * $f-h1;
-    background-image: linear-gradient(rgba(17, 58, 54, 1) 0%, rgb(17, 58, 54) 70%, rgba(105, 105, 105, 0) 100%);
     text-align: center;
     overflow-y: visible
 }
@@ -20,7 +18,7 @@
 .sticky-hero {
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: -220px;
+    top: -190px;
 }
 
 .hero h3 {
@@ -34,19 +32,18 @@
 }
 
 .hero p {
-    margin: 40px 0 0; 
     font-weight: 200;
 }
 
-.scrollTransform {
-    position: sticky;
-    top: 100
+.hero .heroP {
+    background-color: $bg-cl;
+    border-width: 10px;
+    border-color: $bg-cl;
+    border-radius: 6px;
+    border-style: solid;
+    font-weight: 200;
 }
 
-.scrollTransform h3 {
-    position: sticky;
-    top: 100
-}
 
 @media only screen and (max-width: 500px) {
     .hero h3 {
