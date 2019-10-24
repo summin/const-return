@@ -11,9 +11,12 @@
     font-style: normal;
   }
 
+
 $bg-cl: #3a596c;
 $bg-wh: white;
 $bg-ft: #98c7a2;
+$bg-nv: $bg-cl;
+$bg-hr: $bg-cl;
 $cl-ft: black;
 $f-sel: #FAEBD7;
 $f-her: #FAEBD7;
@@ -42,9 +45,7 @@ $f-h1: 45px;
 @import './themes/hero.scss';
 @import './themes/gallery.scss';
 @import './themes/card.scss';
-@import './themes/heroLogo.scss';
 @import './nav.scss';
-@import './animate.scss';
 
 
 

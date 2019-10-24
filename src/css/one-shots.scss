@@ -9,23 +9,10 @@ body {
     text-align: justify;
 } 
 
-html {
-    width: 100%;
-    height: 100%;
-}
-body {
-    width: 100%;
-    height: 100%;
-}
-
 a {
-    color: black;
+    color: $cl-ft;
     text-decoration: none;
     padding: 0 2px;
-}
-
-.max-height-100-vh {
-    height: calc(100vh-15px);
 }
 
 .footer {

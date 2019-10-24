@@ -26,5 +26,4 @@ export default ({ ...props }) => {
                 </div>)}
         </Fragment>
     );
-
 }

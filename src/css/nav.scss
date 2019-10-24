@@ -34,12 +34,12 @@
     margin: 10px 0 13px;
     text-decoration: none;
     z-index: 1;
-    -webkit-user-select: none;
-    /* Chrome all / Safari all */
-    -moz-user-select: none;
-    /* Firefox all             */
-    -ms-user-select: none;
-    /* IE 10+                  */
+        -webkit-user-select: none;
+        /* Chrome all / Safari all */
+        -moz-user-select: none;
+        /* Firefox all             */
+        -ms-user-select: none;
+        /* IE 10+                  */
     user-select: none;
     transition: transform 0.3s;
     border-radius: 10px;
