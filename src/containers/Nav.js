@@ -24,7 +24,9 @@ export default class Header extends Component {
     }
 
     onClick = () => {
+        
         this.setState({ toggle: !this.state.toggle })
+        
     }
 
     render() {

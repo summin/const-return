@@ -32,6 +32,7 @@ export default class App extends Component {
 
     onClick = (e) => {
         e.preventDefault()
+        document.getElementsByClassName('contentParent')[0].scrollTop = 0
         const html = e.target.innerHTML
         this.parser(html.toLowerCase()).then((i) => {
             if (html !== this.state.onClickValue) {
