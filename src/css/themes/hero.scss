@@ -3,8 +3,7 @@
     flex-flow: column;
     align-content: center;
     width: 100%;
-    height: 220px;
-    padding-top: 10px;
+    padding: 5px;
     font-family: $f-h;
     font-style: normal;
     font-weight: 100;
@@ -12,13 +11,13 @@
     color: $f-her;
     font-size: 0.5 * $f-h1;
     text-align: center;
-    overflow-y: visible
+    overflow-y: visible;
 }
 
 .sticky-hero {
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: -190px;
+    top: -30px;
 }
 
 .hero h3 {
@@ -33,12 +32,14 @@
 
 .hero p {
     font-weight: 200;
+    z-index: 1000
 }
 
 .hero .heroP {
-    background-color: $bg-cl;
+    color: $f-sel;
+    background-color: $bg-nv;
     border-width: 10px;
-    border-color: $bg-cl;
+    border-color: $bg-nv;
     border-radius: 6px;
     border-style: solid;
     font-weight: 200;

@@ -21,7 +21,7 @@ export default ({ ...props }) => {
                 </div>
             )}
             {(props.type == "zone") && (
-                <div key={props.theme} className={"zone " + props.layout + " " + props.style.type + " " + props.main}>
+                <div key={props.theme} className={"zone " + props.layout + " " + props.style.type} style={props.style.inline}>
                     {props.children}
                 </div>)}
         </Fragment>

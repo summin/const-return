@@ -12,14 +12,14 @@
   }
 
 
-$bg-cl: #3a596c;
+$bg-cl: white;
 $bg-wh: white;
 $bg-ft: #98c7a2;
-$bg-nv: $bg-cl;
-$bg-hr: $bg-cl;
+$bg-nv: #81898c;
+$bg-hr: #98bec7;
 $cl-ft: black;
 $f-sel: #FAEBD7;
-$f-her: #FAEBD7;
+$f-her: rgb(155, 109, 48);
 
 $f-h: "Helvetica Neue";
 $f-a: "Arial";
@@ -28,7 +28,10 @@ $f-g: "GaramondProItalic";
 //header
 $h-sz-h: 60px;
 $h-wd-li: 110px;
-$f-sz-head-nav: 25px;
+$f-sz-head-nav: 21px;
+
+
+$f-sz-h: 20px;
 
 //font standard
 $f-sz: 15px;
@@ -41,6 +44,7 @@ $f-h1: 45px;
 @import './content.scss';
 @import './styles.scss';
 @import './themes/wrapped-image.scss';
+@import './themes/smartIcons.scss';
 @import './themes/article.scss';
 @import './themes/hero.scss';
 @import './themes/gallery.scss';

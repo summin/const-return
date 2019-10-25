@@ -1,13 +1,25 @@
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     margin: 0px;
-    padding: 0px;
+    padding-top: $h-sz-h;
+    padding-bottom: $h-sz-h;
     background-color: $bg-cl;
     font-family: $f-a; 
     font-size: $f-sz; 
     font-style: normal; 
     font-variant: normal; 
     text-align: justify;
+    overflow-y: hidden;
 } 
+
+#app {
+    height: 100%;
+    overflow-y: scroll;
+}
 
 a {
     color: $cl-ft;
@@ -16,7 +28,7 @@ a {
 }
 
 .footer {
-    height: 20px;
+    height: $f-sz-h;
     position: fixed;
     padding: 0 10px;
     display: flex;

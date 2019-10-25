@@ -56,7 +56,7 @@
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "smartIcons"
+                "theme": "wrapped-image"
             },
             "redux": {
                 "content": {
@@ -68,7 +68,7 @@
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "smartIcons"
+                "theme": "wrapped-image"
             },
             "node.js": {
                 "content": {
@@ -80,7 +80,7 @@
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "smartIcons"
+                "theme": "wrapped-image"
             },
             "js": {
                 "content": {
@@ -92,7 +92,7 @@
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "smartIcons"
+                "theme": "wrapped-image"
             },
             "java": {
                 "content": {
@@ -104,7 +104,7 @@
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "smartIcons"
+                "theme": "wrapped-image"
             },
             "php": {
                 "content": {
@@ -116,7 +116,7 @@
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "smartIcons"
+                "theme": "wrapped-image"
             },
             "sass": {
                 "content": {
@@ -128,7 +128,7 @@
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "smartIcons"
+                "theme": "wrapped-image"
             },
             "three.js": {
                 "content": {
@@ -140,7 +140,7 @@
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "smartIcons",
+                "theme": "wrapped-image",
                 "entries": {
                     "test1": "value of test1",
                     "test2": "value of test2"
@@ -156,7 +156,7 @@
                 "style": {
                     "placeholder": "placeholder"
                 },
-                "theme": "smartIcons"
+                "theme": "wrapped-image"
             }
         }
     }
