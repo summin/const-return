@@ -11,12 +11,18 @@
     font-style: normal;
   }
 
+<<<<<<< HEAD
 
 $bg-cl: white;
 $bg-wh: white;
 $bg-ft: #98c7a2;
 $bg-nv: #81898c;
 $bg-hr: #98bec7;
+=======
+$bg-cl: #3a596c;
+$bg-wh: white;
+$bg-ft: #98c7a2;
+>>>>>>> parent of c7d8108... dev
 $cl-ft: black;
 $f-sel: #FAEBD7;
 $f-her: rgb(155, 109, 48);
@@ -49,7 +55,9 @@ $f-h1: 45px;
 @import './themes/hero.scss';
 @import './themes/gallery.scss';
 @import './themes/card.scss';
+@import './themes/heroLogo.scss';
 @import './nav.scss';
+@import './animate.scss';
 
 
 

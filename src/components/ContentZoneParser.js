@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { Fragment, useEffect } from 'react';
 import ContentElement from './ContentElement'
+import PropTypes from 'prop-types'
+import cuid from 'cuid'
 
 export default ({ ...props }) => {
 
@@ -39,7 +41,7 @@ export default ({ ...props }) => {
     }
 
     return (
-        <div className="content">
+        <div>
             {zoneParser()}
         </div>
     );

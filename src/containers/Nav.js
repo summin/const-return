@@ -19,8 +19,8 @@ export default class Header extends Component {
                 selected: this.props.selected
             })
             : ""
-        const x = document.getElementsByClassName("content")[0]
-        !this.state.toggle ? x.setAttribute("class", "blur0 content") : x.setAttribute("class", "blur30 content")
+        const x = document.getElementsByClassName("contentParent")[0]
+        !this.state.toggle ? x.setAttribute("class", "blur0 contentParent") : x.setAttribute("class", "blur30 contentParent")
     }
 
     onClick = () => {
