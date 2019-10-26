@@ -1,14 +1,22 @@
-const http = require('http');
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World!\n');
+require('babel-register')({
+    presets: ['react']
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+var express = require('express');
+var app = express();
+var React = require('react');
+var ReactDOMServer = require('react-dom/server');
+var Component = require('./index.js');
+
+app.get('/', function(request, response) {
+    var html = ReactDOMServer.renderToString(
+        React.createElement(Component)
+    );
+    response.send(html);
+});
+
+var PORT = 3000;
+app.listen(PORT, function() {
+    console.log('http://localhost:' + PORT);
 });
