@@ -17,9 +17,17 @@ const config = {
         path: path.resolve(__dirname, 'public'),
         filename: '[name].[hash].js'
     },
+    
     devServer: {
         contentBase: path.join(__dirname, 'public'),
-        port: 8080
+        port: 8080,
+        proxy: {
+            '/': {
+              target: 'http://localhost:3000', 
+              changeOrigin: true
+              
+            }
+        }
       },
 
     resolve: {
@@ -81,10 +89,10 @@ const config = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({
-            title: 'Caching',
-            template: './src/index.html'
-        }),
+        // new HtmlWebpackPlugin({
+        //     title: 'Caching',
+        //     template: './src/index.html'
+        // }),
         new ExtractTextPlugin(path.join('app[hash].css')),
         new webpack.DefinePlugin({
             '__DEV__': JSON.stringify(true),

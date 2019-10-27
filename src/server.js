@@ -7,7 +7,7 @@ var express = require('express');
 var app = express();
 var React = require('react');
 var ReactDOMServer = require('react-dom/server');
-var Component = require('./index.js');
+var Component = require('./server/ServApp.js');
 
 app.get('/', function(request, response) {
     var html = ReactDOMServer.renderToString(
