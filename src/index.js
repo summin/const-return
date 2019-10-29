@@ -20,7 +20,7 @@ export const store = createStore(
     applyMiddleware(...middleware),
 ))
 
-ReactDOMServer.hydrate(
+render(
     <Provider store={store}>
         <App />
     </Provider>,
