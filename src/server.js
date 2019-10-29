@@ -1,22 +1,70 @@
+import express from "express";
+import path from "path";
+import React from "react";
+import serialize from "serialize-javascript";
+import { renderToString } from "react-dom/server";
+import { StaticRouter, matchPath } from "react-router-dom";
+import { Provider as ReduxProvider } from "react-redux";
+import Helmet from "react-helmet";
+import routes from "./routes";
+import App from "./containers/App";
+import createStore, { initializeSession } from "./store";
 
-require('babel-register')({
-    presets: ['react']
-});
+const app = express();
 
-var express = require('express');
-var app = express();
-var React = require('react');
-var ReactDOMServer = require('react-dom/server');
-var Component = require('./server/ServApp.js');
+app.use( express.static( path.resolve( __dirname, "../dist" ) ) );
 
-app.get('/', function(request, response) {
-    var html = ReactDOMServer.renderToString(
-        React.createElement(Component)
-    );
-    response.send(html);
-});
+app.get( "/*", ( req, res ) => {
+    const context = { };
+    const store = createStore( );
 
-var PORT = 3000;
-app.listen(PORT, function() {
-    console.log('http://localhost:' + PORT);
-});
+    store.dispatch( initializeSession( ) );
+
+    const dataRequirements =
+        routes
+            .filter( route => matchPath( req.url, route ) ) // filter matching paths
+            .map( route => route.component ) // map to components
+            .filter( comp => comp.serverFetch ) // check if components have data requirement
+            .map( comp => store.dispatch( comp.serverFetch( ) ) ); // dispatch data requirement
+
+    Promise.all( dataRequirements ).then( ( ) => {
+        const jsx = (
+            <ReduxProvider store={ store }>
+                <StaticRouter context={ context } location={ req.url }>
+                    <App />
+                </StaticRouter>
+            </ReduxProvider>
+        );
+        const reactDom = renderToString( jsx );
+        const reduxState = store.getState( );
+        const helmetData = Helmet.renderStatic( );
+
+        res.writeHead( 200, { "Content-Type": "text/html" } );
+        res.end( htmlTemplate( reactDom, reduxState, helmetData ) );
+    } );
+} );
+
+app.listen( 2048 );
+
+function htmlTemplate( reactDom, reduxState, helmetData ) {
+    return `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            ${ helmetData.title.toString( ) }
+            ${ helmetData.meta.toString( ) }
+            <title>React SSR</title>
+            <link rel="stylesheet" type="text/css" href="./styles.css" />
+        </head>
+        
+        <body>
+            <div id="app">${ reactDom }</div>
+            <script>
+                window.REDUX_DATA = ${ serialize( reduxState, { isJSON: true } ) }
+            </script>
+            <script src="./app.bundle.js"></script>
+        </body>
+        </html>
+    `;
+}

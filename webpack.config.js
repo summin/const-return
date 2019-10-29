@@ -2,32 +2,31 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const dev = process.env.NODE_ENV !== "production";
+const { BundleAnalyzerPlugin } = require( "webpack-bundle-analyzer" );
+const FriendlyErrorsWebpackPlugin = require( "friendly-errors-webpack-plugin" );
+const MiniCssExtractPlugin = require( "mini-css-extract-plugin" );
 
 
 const config = {
+    mode: dev ? "development" : "production",
+    context: path.join( __dirname, "src" ),
+    devtool: dev ? "none" : "source-map",
     entry: {
         main: [
-            './src/index.js',
-            './src/css/app.scss'
+            './client.js',
+            './css/app.scss'
         ]
     },
     output: {
-        path: path.resolve(__dirname, 'public'),
-        filename: '[name].[hash].js'
+        path: path.resolve( __dirname, "dist" ),
+        filename: '[name].bundle.js'
     },
     
     devServer: {
-        contentBase: path.join(__dirname, 'public'),
-        port: 8080,
-        proxy: {
-            '/': {
-              target: 'http://localhost:3000', 
-              changeOrigin: true
-              
-            }
-        }
+        contentBase: path.join(__dirname, 'dist'),
+        port: 8080
       },
 
     resolve: {
@@ -98,29 +97,28 @@ const config = {
             '__DEV__': JSON.stringify(true),
             '__API_HOST__': JSON.stringify('http://localhost/my-app/'),
         }),
-
     ],
 }
 
-if (process.env.NODE_ENV === 'production') {
-    config.plugins.push(
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: false,
-            compress: {
-                sequences: true,
-                conditionals: true,
-                booleans: true,
-                if_return: true,
-                join_vars: true,
-                drop_console: true
-            },
-            output: {
-                comments: false
-            },
-            minimize: true
-        })
-    );
-}
+// if (process.env.NODE_ENV === 'production') {
+//     config.plugins.push(
+//         new webpack.optimize.UglifyJsPlugin({
+//             sourceMap: false,
+//             compress: {
+//                 sequences: true,
+//                 conditionals: true,
+//                 booleans: true,
+//                 if_return: true,
+//                 join_vars: true,
+//                 drop_console: true
+//             },
+//             output: {
+//                 comments: false
+//             },
+//             minimize: true
+//         })
+//     );
+// }
 
 
 
