@@ -1,5 +1,5 @@
 import React, { Component, Fragment, useEffect } from 'react'
-import ContentZoneParser from '../components/ContentZoneParser'
+import ContentZoneParser from './ContentZoneParser'
 
 
 export default class Content extends Component {

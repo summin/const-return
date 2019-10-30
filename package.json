@@ -13,7 +13,7 @@
         "client": "webpack --watch --progress",
         "linter": "eslint src",
         "bundlesize": "bundlesize",
-        "precommit": "eslint src --quiet"
+        "precommit": "eslint src --quiet --no-validate"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.21",
@@ -40,7 +40,8 @@
         "redux": "^4.0.4",
         "redux-logger": "^3.0.6",
         "redux-thunk": "^2.3.0",
-        "serialize-javascript": "^1.8.0"
+        "serialize-javascript": "^1.8.0",
+        "webpack-merge": "^4.2.2"
     },
     "devDependencies": {
         "@babel/core": "^7.0.0-rc.1",

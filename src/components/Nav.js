@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Logo from '../media/images/Logo.png'
+// import Logo from '../media/images/Logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faUser } from '@fortawesome/free-solid-svg-icons'
-
 
 export default class Header extends Component {
 

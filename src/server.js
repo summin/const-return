@@ -7,7 +7,7 @@ import { StaticRouter, matchPath } from "react-router-dom";
 import { Provider as ReduxProvider } from "react-redux";
 import Helmet from "react-helmet";
 import routes from "./routes";
-import App from "./containers/App";
+import App from "./components/_App";
 import createStore, { initializeSession } from "./store";
 
 const app = express();
@@ -44,7 +44,7 @@ app.get( "/*", ( req, res ) => {
     } );
 } );
 
-app.listen( 2048 );
+app.listen( 8080 );
 
 function htmlTemplate( reactDom, reduxState, helmetData ) {
     return `

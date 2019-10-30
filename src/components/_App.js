@@ -2,8 +2,8 @@ import React, { useEffect, Component, Fragment } from 'react';
 import Header from './Nav'
 import Content from './Content'
 import Footer from './Footer'
-import HeroLogo from '../components/HeroLogo'
-import RightSideNav from './RightSideNav'
+import HeroLogo from './HeroLogo'
+import RightSideNav from './arc/RightSideNav'
 
 export default class App extends Component {
 
@@ -21,14 +21,14 @@ export default class App extends Component {
         navToggle: false,
     }
 
-    parser = (content) => {
-        return new Promise((resolve, reject) => {
-            import('../contentData/' + content + '.json')
-                .then((i) => {
-                    resolve(i)
-                })
-        })
-    }
+    //parser = (content) => {
+    //    return new Promise((resolve, reject) => {
+    //        import('../contentData/' + content + '.json')
+    //            .then((i) => {
+    //                resolve(i)
+    //            })
+    //    })
+    //}
 
     onClick = (e) => {
         e.preventDefault()

@@ -1,27 +1,27 @@
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Secret from "./components/Secret";
+import _Home from "./components/_Home";
+import _Projects from "./components/_Projects";
+import _Technology from "./components/_Technology";
+import _Shop from "./components/_Shop";
 
 export default [
     {
         path: "/",
-        component: Home,
+        component: _Home,
         exact: true,
     },
     {
-        path: "/about",
-        component: About,
+        path: "/technology",
+        component: _Technology,
         exact: true,
     },
     {
-        path: "/contact",
-        component: Contact,
+        path: "/projects",
+        component: _Projects,
         exact: true,
     },
     {
-        path: "/secret",
-        component: Secret,
+        path: "/shop",
+        component: _Shop,
         exact: true,
     },
 ];
