@@ -18,8 +18,8 @@ const server = {
         filename: 'server-side.js'
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public'),
-        port: 8080,
+        contentBase: path.join(__dirname, 'public-serv'),
+        port: 8090,
 
     },
     resolve: {

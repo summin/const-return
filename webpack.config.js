@@ -2,10 +2,8 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const server = require('./webpack.server.js')
-
 
 const config = {
     name: "client",
@@ -17,10 +15,10 @@ const config = {
     },
     output: {
         path: path.resolve(__dirname, 'public-serv'),
-        filename: 'server-side.js'
+        filename: '[hash]-ssr.js'
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public'),
+        contentBase: path.join(__dirname, 'public-serv'),
         port: 8080,
 
     },
