@@ -2,13 +2,11 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const server = require('./webpack.server.js')
 
 
-const config = {
-    name: "client",
+const server = {
+    name: "server",
     entry: {
         main: [
             './src/index.js',
@@ -118,4 +116,4 @@ if (process.env.NODE_ENV === 'production') {
 
 
 
-module.exports = [ config, server ];
+module.exports = server;
