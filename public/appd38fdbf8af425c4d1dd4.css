@@ -652,7 +652,7 @@ h3 {
     top: 0px;
     font-size: 300%; }
   to {
-    top: 200px;
+    top: 600px;
     font-size: 0ex; } }
 
 @keyframes FromHighToLow {
@@ -660,7 +660,7 @@ h3 {
     top: 0px;
     font-size: 3ex; }
   to {
-    top: -200px;
+    top: -600px;
     font-size: 0ex; } }
 
 .animateITDown {
@@ -674,7 +674,7 @@ h3 {
     top: 0px;
     font-size: 300%; }
   to {
-    top: 200px;
+    top: 600px;
     font-size: 0ex; } }
 
 @keyframes FromLowtoHigh {

@@ -6,7 +6,7 @@
     "scripts": {
         "build": "webpack --progress --env.NODE_ENV=production --mode production",
         "watch": "webpack  --colors --debug --display-chunk -w --env.NODE_ENV=development --mode development",
-        "start": "webpack-dev-server"
+        "   ": "webpack-dev-server"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.21",
